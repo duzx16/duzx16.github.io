@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zhengxiao Du</title>
+    <link>/authors/admin/</link>
+    <description>Recent content on Zhengxiao Du</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    
+	    <atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;I am an undergraduate student in the Department of Computer Science and Technology at Tsinghua University. I am a member of the Knowledge Engineering Group, advised by &lt;a href=&#34;http://keg.cs.tsinghua.edu.cn/jietang&#34; target=&#34;_blank&#34;&gt;Jie Tang&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;My research so far includes Recommender Systems &lt;a href=&#34;/publication/pkdd-18/&#34;&gt;[ECML/PKDD&amp;rsquo;18]&lt;/a&gt; &lt;a href=&#34;/publication/kdd-19&#34;&gt;[KDD&amp;rsquo;19]&lt;/a&gt; and Knowledge Graph Reasoning &lt;a href=&#34;/publication/cogkr-19&#34;&gt;[arXiv]&lt;/a&gt;. Generally, I am also interested in the application of Machine Learning and Reinforcement Learning.&lt;/p&gt;
+
+&lt;p&gt;In my spare time, I like to read science fiction novels and history books, especially the history of Ancient Rome and Three Kingdoms Period in China.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
