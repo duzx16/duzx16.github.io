@@ -1,29 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>/authors/zhengxiao-du/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/publication_types/2/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/chang-zhou/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -34,25 +30,21 @@
   <url>
     <loc>/authors/hongxia-yang/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jie-tang/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/ming-ding/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/publication_types/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -63,13 +55,11 @@
   <url>
     <loc>/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/publication_types/1/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -80,7 +70,6 @@
   <url>
     <loc>/authors/jingren-zhou/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -91,13 +80,11 @@
   <url>
     <loc>/authors/xiaowei-wang/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/yifeng-zhao/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -108,7 +95,6 @@
   <url>
     <loc>/authors/yuhui-ding/</loc>
     <lastmod>2018-09-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -117,7 +103,6 @@
   
   <url>
     <loc>/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -130,7 +115,6 @@
   
   <url>
     <loc>/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
