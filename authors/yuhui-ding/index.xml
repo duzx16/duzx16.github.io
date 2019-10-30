@@ -6,10 +6,19 @@
     <description>Recent content in Yuhui Ding on Zhengxiao Du</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Oct 2019 11:19:52 +0800</lastBuildDate>
     
 	    <atom:link href="/authors/yuhui-ding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>POLAR&#43;&#43;: Active One-shot Personalized Article Recommendation</title>
+      <link>/publication/tkde-19/</link>
+      <pubDate>Wed, 30 Oct 2019 11:19:52 +0800</pubDate>
+      
+      <guid>/publication/tkde-19/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>POLAR: Attention-Based CNN for One-Shot Personalized Article Recommendation</title>
