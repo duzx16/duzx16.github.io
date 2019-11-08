@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zhengxiao Du</title>
-    <link>/</link>
+    <link>https://duzx16.github.io/</link>
     <description>Recent content on Zhengxiao Du</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Oct 2019 11:19:52 +0800</lastBuildDate>
     
-	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://duzx16.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Publications</title>
-      <link>/publication/</link>
+      <link>https://duzx16.github.io/publication/</link>
       <pubDate>Wed, 30 Oct 2019 11:19:52 +0800</pubDate>
       
-      <guid>/publication/</guid>
+      <guid>https://duzx16.github.io/publication/</guid>
       <description></description>
     </item>
     
@@ -31,19 +31,19 @@
     
     <item>
       <title>Posts</title>
-      <link>/post/</link>
+      <link>https://duzx16.github.io/post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/</guid>
+      <guid>https://duzx16.github.io/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>/talk/</link>
+      <link>https://duzx16.github.io/talk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/talk/</guid>
+      <guid>https://duzx16.github.io/talk/</guid>
       <description></description>
     </item>
     

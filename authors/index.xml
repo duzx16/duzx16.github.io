@@ -2,105 +2,105 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Zhengxiao Du</title>
-    <link>/authors/</link>
+    <link>https://duzx16.github.io/authors/</link>
     <description>Recent content in Authors on Zhengxiao Du</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Oct 2019 11:19:52 +0800</lastBuildDate>
     
-	    <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://duzx16.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>**Zhengxiao Du**</title>
-      <link>/authors/zhengxiao-du/</link>
+      <link>https://duzx16.github.io/authors/zhengxiao-du/</link>
       <pubDate>Wed, 30 Oct 2019 11:19:52 +0800</pubDate>
       
-      <guid>/authors/zhengxiao-du/</guid>
+      <guid>https://duzx16.github.io/authors/zhengxiao-du/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jie Tang</title>
-      <link>/authors/jie-tang/</link>
+      <link>https://duzx16.github.io/authors/jie-tang/</link>
       <pubDate>Wed, 30 Oct 2019 11:19:52 +0800</pubDate>
       
-      <guid>/authors/jie-tang/</guid>
+      <guid>https://duzx16.github.io/authors/jie-tang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Yuhui Ding</title>
-      <link>/authors/yuhui-ding/</link>
+      <link>https://duzx16.github.io/authors/yuhui-ding/</link>
       <pubDate>Wed, 30 Oct 2019 11:19:52 +0800</pubDate>
       
-      <guid>/authors/yuhui-ding/</guid>
+      <guid>https://duzx16.github.io/authors/yuhui-ding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hongxia Yang</title>
-      <link>/authors/hongxia-yang/</link>
+      <link>https://duzx16.github.io/authors/hongxia-yang/</link>
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/authors/hongxia-yang/</guid>
+      <guid>https://duzx16.github.io/authors/hongxia-yang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jingren Zhou</title>
-      <link>/authors/jingren-zhou/</link>
+      <link>https://duzx16.github.io/authors/jingren-zhou/</link>
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/authors/jingren-zhou/</guid>
+      <guid>https://duzx16.github.io/authors/jingren-zhou/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Xiaowei Wang</title>
-      <link>/authors/xiaowei-wang/</link>
+      <link>https://duzx16.github.io/authors/xiaowei-wang/</link>
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/authors/xiaowei-wang/</guid>
+      <guid>https://duzx16.github.io/authors/xiaowei-wang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chang Zhou</title>
-      <link>/authors/chang-zhou/</link>
+      <link>https://duzx16.github.io/authors/chang-zhou/</link>
       <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/authors/chang-zhou/</guid>
+      <guid>https://duzx16.github.io/authors/chang-zhou/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ming Ding</title>
-      <link>/authors/ming-ding/</link>
+      <link>https://duzx16.github.io/authors/ming-ding/</link>
       <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/authors/ming-ding/</guid>
+      <guid>https://duzx16.github.io/authors/ming-ding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Yifeng Zhao</title>
-      <link>/authors/yifeng-zhao/</link>
+      <link>https://duzx16.github.io/authors/yifeng-zhao/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/authors/yifeng-zhao/</guid>
+      <guid>https://duzx16.github.io/authors/yifeng-zhao/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>/authors/admin/</link>
+      <link>https://duzx16.github.io/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/authors/admin/</guid>
+      <guid>https://duzx16.github.io/authors/admin/</guid>
       <description>&lt;p&gt;I am an undergraduate student in the Department of Computer Science and Technology at Tsinghua University. I am also a member of the Knowledge Engineering Group, advised by Prof. &lt;a href=&#34;http://keg.cs.tsinghua.edu.cn/jietang&#34; target=&#34;_blank&#34;&gt;Jie Tang&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;My research interest lies in the application of machine learning algorithms to real-world systems, including recommender systems &lt;a href=&#34;/publication/pkdd-18/&#34;&gt;[ECML/PKDD&amp;rsquo;18]&lt;/a&gt; &lt;a href=&#34;/publication/kdd-19&#34;&gt;[KDD&amp;rsquo;19]&lt;/a&gt;&lt;a href=&#34;/publication/tkde-19&#34;&gt;[TKDE]&lt;/a&gt;, search engines and knowledge graphs &lt;a href=&#34;/publication/cogkr-19&#34;&gt;[arXiv]&lt;/a&gt;. Generally, I am also interested in the algorithms for machine learning and reinforcement learning.&lt;/p&gt;
+&lt;p&gt;My research interest lies in the application of machine learning algorithms to real-world systems, including recommender systems &lt;a href=&#34;https://duzx16.github.io/publication/pkdd-18/&#34;&gt;[ECML/PKDD&amp;rsquo;18]&lt;/a&gt; &lt;a href=&#34;https://duzx16.github.io/publication/kdd-19&#34;&gt;[KDD&amp;rsquo;19]&lt;/a&gt;&lt;a href=&#34;https://duzx16.github.io/publication/tkde-19&#34;&gt;[TKDE]&lt;/a&gt;, search engines and knowledge graphs &lt;a href=&#34;https://duzx16.github.io/publication/cogkr-19&#34;&gt;[arXiv]&lt;/a&gt;. Generally, I am also interested in the algorithms for machine learning and reinforcement learning.&lt;/p&gt;
 
 &lt;p&gt;In my spare time, I like to read science fiction novels and history books, especially the history of Ancient Rome and Three Kingdoms Period in China.&lt;/p&gt;
 </description>

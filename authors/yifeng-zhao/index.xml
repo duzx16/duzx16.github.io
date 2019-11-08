@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yifeng Zhao on Zhengxiao Du</title>
-    <link>/authors/yifeng-zhao/</link>
+    <link>https://duzx16.github.io/authors/yifeng-zhao/</link>
     <description>Recent content in Yifeng Zhao on Zhengxiao Du</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="/authors/yifeng-zhao/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://duzx16.github.io/authors/yifeng-zhao/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>EFCNN: A Restricted Convolutional Neural Network for Expert Finding</title>
-      <link>/publication/pakdd-19/</link>
+      <link>https://duzx16.github.io/publication/pakdd-19/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/publication/pakdd-19/</guid>
+      <guid>https://duzx16.github.io/publication/pakdd-19/</guid>
       <description></description>
     </item>
     
