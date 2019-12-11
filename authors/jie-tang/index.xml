@@ -6,15 +6,24 @@
     <description>Recent content in Jie Tang on Zhengxiao Du</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Oct 2019 11:19:52 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://duzx16.github.io/authors/jie-tang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Cognitive Knowledge Graph Reasoning for One-shot Relational Learning</title>
+      <link>https://duzx16.github.io/publication/cogkr-19/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://duzx16.github.io/publication/cogkr-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>POLAR&#43;&#43;: Active One-shot Personalized Article Recommendation</title>
       <link>https://duzx16.github.io/publication/tkde-19/</link>
-      <pubDate>Wed, 30 Oct 2019 11:19:52 +0800</pubDate>
+      <pubDate>Mon, 30 Sep 2019 11:19:52 +0800</pubDate>
       
       <guid>https://duzx16.github.io/publication/tkde-19/</guid>
       <description></description>
@@ -26,15 +35,6 @@
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://duzx16.github.io/publication/kdd-19/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cognitive Knowledge Graph Reasoning for One-shot Relational Learning</title>
-      <link>https://duzx16.github.io/publication/cogkr-19/</link>
-      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://duzx16.github.io/publication/cogkr-19/</guid>
       <description></description>
     </item>
     
