@@ -43,11 +43,6 @@
   </url>
   
   <url>
-    <loc>https://duzx16.github.io/</loc>
-    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://duzx16.github.io/authors/chang-zhou/</loc>
     <lastmod>2019-10-15T00:00:00+00:00</lastmod>
   </url>
@@ -108,12 +103,22 @@
   </url>
   
   <url>
+    <loc>https://duzx16.github.io/blog/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://duzx16.github.io/publication/pakdd-19/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://duzx16.github.io/authors/yifeng-zhao/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duzx16.github.io/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
