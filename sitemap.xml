@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://duzx16.github.io/authors/admin/</loc>
+    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duzx16.github.io/authors/</loc>
+    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duzx16.github.io/categories/</loc>
+    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duzx16.github.io/post/</loc>
+    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duzx16.github.io/post/report-hpmor/</loc>
+    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duzx16.github.io/categories/%E9%98%85%E8%AF%BB/</loc>
+    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://duzx16.github.io/authors/zhengxiao-du/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://duzx16.github.io/publication_types/3/</loc>
-    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/authors/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -125,18 +150,6 @@
   <url>
     <loc>https://duzx16.github.io/publication/pkdd-18/</loc>
     <lastmod>2018-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/authors/admin/</loc>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/post/</loc>
   </url>
   
   <url>

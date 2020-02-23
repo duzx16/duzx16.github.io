@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Posts</title>
+      <link>https://duzx16.github.io/post/</link>
+      <pubDate>Sat, 22 Feb 2020 21:26:09 +0800</pubDate>
+      
+      <guid>https://duzx16.github.io/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Publications</title>
       <link>https://duzx16.github.io/publication/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
@@ -26,15 +35,6 @@
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://duzx16.github.io/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Posts</title>
-      <link>https://duzx16.github.io/post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://duzx16.github.io/post/</guid>
       <description></description>
     </item>
     
