@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Zhengxiao Du</title>
+    <title>Categories | Zhengxiao Du</title>
     <link>https://duzx16.github.io/categories/</link>
-    <description>Recent content in Categories on Zhengxiao Du</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 22 Feb 2020 21:26:09 +0800</lastBuildDate>
-    
-	    <atom:link href="https://duzx16.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>阅读</title>
-      <link>https://duzx16.github.io/categories/%E9%98%85%E8%AF%BB/</link>
-      <pubDate>Sat, 22 Feb 2020 21:26:09 +0800</pubDate>
-      
-      <guid>https://duzx16.github.io/categories/%E9%98%85%E8%AF%BB/</guid>
-      <description></description>
-    </item>
+      <atom:link href="https://duzx16.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <description>Categories</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 22 Feb 2020 21:26:09 +0800</lastBuildDate>
+    <image>
+      <url>https://duzx16.github.io/images/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_2.png</url>
+      <title>Categories</title>
+      <link>https://duzx16.github.io/categories/</link>
+    </image>
     
   </channel>
 </rss>

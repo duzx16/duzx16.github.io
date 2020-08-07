@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ming Ding on Zhengxiao Du</title>
+    <title>Ming Ding | Zhengxiao Du</title>
     <link>https://duzx16.github.io/authors/ming-ding/</link>
-    <description>Recent content in Ming Ding on Zhengxiao Du</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
-    
-	    <atom:link href="https://duzx16.github.io/authors/ming-ding/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://duzx16.github.io/authors/ming-ding/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ming Ding</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://duzx16.github.io/images/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_2.png</url>
+      <title>Ming Ding</title>
+      <link>https://duzx16.github.io/authors/ming-ding/</link>
+    </image>
     
     <item>
       <title>Cognitive Knowledge Graph Reasoning for One-shot Relational Learning</title>
       <link>https://duzx16.github.io/publication/cogkr-19/</link>
       <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://duzx16.github.io/publication/cogkr-19/</guid>
       <description></description>
     </item>
