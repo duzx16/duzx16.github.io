@@ -5,12 +5,20 @@
     <link>https://duzx16.github.io/publication_types/1/</link>
       <atom:link href="https://duzx16.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 11 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://duzx16.github.io/images/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_2.png</url>
+      <url>https://duzx16.github.io/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
       <link>https://duzx16.github.io/publication_types/1/</link>
     </image>
+    
+    <item>
+      <title>Policy-Gradient Training of Fair and Unbiased Ranking Functions</title>
+      <link>https://duzx16.github.io/publication/fair-19/</link>
+      <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://duzx16.github.io/publication/fair-19/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>EFCNN: A Restricted Convolutional Neural Network for Expert Finding</title>

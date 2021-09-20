@@ -1,163 +1,123 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://duzx16.github.io/authors/admin/</loc>
-    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/authors/</loc>
-    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/categories/</loc>
-    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/post/</loc>
-    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/</loc>
-    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/post/report-hpmor/</loc>
-    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/categories/%E9%98%85%E8%AF%BB/</loc>
-    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/authors/zhengxiao-du/</loc>
-    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/publication_types/3/</loc>
-    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/publication/fair-19/</loc>
-    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/authors/himank-yadav/</loc>
-    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/publication_types/</loc>
-    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/publication/</loc>
-    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/authors/thorsten-joachims/</loc>
-    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/authors/chang-zhou/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/publication/cogkr-19/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/authors/hongxia-yang/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/authors/jie-tang/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/authors/ming-ding/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://duzx16.github.io/publication_types/2/</loc>
-    <lastmod>2019-09-30T11:19:52+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/publication_types/3/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/chang-zhou/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/publication/cogkr-19/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/publication/glm-21/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/publication/p-tuning/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/hongxia-yang/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/jiangchao-yao/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/jie-tang/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/jiezhong-qiu/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/ming-ding/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/publication_types/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/publication/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/xiao-liu/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/yanan-zheng/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/yujie-qian/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/admin/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/zhilin-yang/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/publication_types/1/</loc>
+    <lastmod>2021-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/himank-yadav/</loc>
+    <lastmod>2021-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/publication/fair-19/</loc>
+    <lastmod>2021-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/thorsten-joachims/</loc>
+    <lastmod>2021-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/categories/</loc>
+    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/post/</loc>
+    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/authors/zhengxiao-du/</loc>
+    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/post/report-hpmor/</loc>
+    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
+  </url><url>
+    <loc>https://duzx16.github.io/categories/%E9%98%85%E8%AF%BB/</loc>
+    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
+  </url><url>
     <loc>https://duzx16.github.io/publication/tkde-19/</loc>
     <lastmod>2019-09-30T11:19:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://duzx16.github.io/authors/yuhui-ding/</loc>
     <lastmod>2019-09-30T11:19:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://duzx16.github.io/authors/jingren-zhou/</loc>
     <lastmod>2019-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://duzx16.github.io/publication/kdd-19/</loc>
     <lastmod>2019-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://duzx16.github.io/authors/xiaowei-wang/</loc>
     <lastmod>2019-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duzx16.github.io/publication_types/1/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://duzx16.github.io/blog/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://duzx16.github.io/publication/pakdd-19/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://duzx16.github.io/authors/yifeng-zhao/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://duzx16.github.io/publication/pkdd-18/</loc>
     <lastmod>2018-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://duzx16.github.io/talk/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://duzx16.github.io/tags/</loc>
   </url>
-  
 </urlset>
