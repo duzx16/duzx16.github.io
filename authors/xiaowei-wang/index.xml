@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xiaowei Wang | Zhengxiao Du</title>
-    <link>https://duzx16.github.io/authors/xiaowei-wang/</link>
-      <atom:link href="https://duzx16.github.io/authors/xiaowei-wang/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://zxdu.xyz/authors/xiaowei-wang/</link>
+      <atom:link href="https://zxdu.xyz/authors/xiaowei-wang/index.xml" rel="self" type="application/rss+xml" />
     <description>Xiaowei Wang</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 20 Jul 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://duzx16.github.io/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
+      <url>https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
       <title>Xiaowei Wang</title>
-      <link>https://duzx16.github.io/authors/xiaowei-wang/</link>
+      <link>https://zxdu.xyz/authors/xiaowei-wang/</link>
     </image>
     
     <item>
       <title>Sequential Scenario-Specific Meta Learner for Online Recommendation</title>
-      <link>https://duzx16.github.io/publication/kdd-19/</link>
+      <link>https://zxdu.xyz/publication/kdd-19/</link>
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://duzx16.github.io/publication/kdd-19/</guid>
+      <guid>https://zxdu.xyz/publication/kdd-19/</guid>
       <description></description>
     </item>
     

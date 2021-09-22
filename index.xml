@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zhengxiao Du</title>
-    <link>https://duzx16.github.io/</link>
-      <atom:link href="https://duzx16.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://zxdu.xyz/</link>
+      <atom:link href="https://zxdu.xyz/index.xml" rel="self" type="application/rss+xml" />
     <description>Zhengxiao Du</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 15 Oct 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://duzx16.github.io/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
+      <url>https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
       <title>Zhengxiao Du</title>
-      <link>https://duzx16.github.io/</link>
+      <link>https://zxdu.xyz/</link>
     </image>
     
     <item>
       <title>CogKR: Cognitive Graph for Multi-hop Knowledge Reasoning</title>
-      <link>https://duzx16.github.io/publication/cogkr-19/</link>
+      <link>https://zxdu.xyz/publication/cogkr-19/</link>
       <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://duzx16.github.io/publication/cogkr-19/</guid>
+      <guid>https://zxdu.xyz/publication/cogkr-19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GLM: General Language Model Pretraining with Autoregressive Blank Infilling</title>
-      <link>https://duzx16.github.io/publication/glm-21/</link>
+      <link>https://zxdu.xyz/publication/glm-21/</link>
       <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://duzx16.github.io/publication/glm-21/</guid>
+      <guid>https://zxdu.xyz/publication/glm-21/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GPT Understands, Too</title>
-      <link>https://duzx16.github.io/publication/p-tuning/</link>
+      <link>https://zxdu.xyz/publication/p-tuning/</link>
       <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://duzx16.github.io/publication/p-tuning/</guid>
+      <guid>https://zxdu.xyz/publication/p-tuning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Policy-Gradient Training of Fair and Unbiased Ranking Functions</title>
-      <link>https://duzx16.github.io/publication/fair-19/</link>
+      <link>https://zxdu.xyz/publication/fair-19/</link>
       <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://duzx16.github.io/publication/fair-19/</guid>
+      <guid>https://zxdu.xyz/publication/fair-19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>读书感想：《哈利波特与理性之道》</title>
-      <link>https://duzx16.github.io/post/report-hpmor/</link>
+      <link>https://zxdu.xyz/post/report-hpmor/</link>
       <pubDate>Sat, 22 Feb 2020 21:26:09 +0800</pubDate>
-      <guid>https://duzx16.github.io/post/report-hpmor/</guid>
+      <guid>https://zxdu.xyz/post/report-hpmor/</guid>
       <description>&lt;p&gt;为了记录自己最近看的书决定开两个专栏，一个是读书笔记，用来记录偏技术性的读书总结，一个是读书感想，用来发表非技术性的读书体会。本篇比较接近一篇安利贴。&lt;/p&gt;
 &lt;p&gt;这是一本《哈利波特》的同人小说。《哈利波特》的原著是我阅读次数最多的小说之一，当然都是在初中时期看的。我觉得这也是比较容易欣赏这本同人的要求：对原著小说有一定的了解，&lt;em&gt;但是又没有热爱到不允许出现任何和原著不符的情节和人物&lt;/em&gt;。&lt;/p&gt;
 &lt;p&gt;当下大部分的《哈利波特》同人无外乎是两种类型，一种是把自己当成原著剧情的补充和扩展，专注于原著主线之外的情节和人物关系；另一种则是只保留原著的世界观，但是讲述完全不同的故事，甚至连主人公都变了（《舌尖上的霍格沃滋》）。而本书则恰好介于两者之间：本书的剧情完全基于原著第一部《魔法石》，没有引入任何新的人物，但是整个情节发展却完全不同。不同在于，如果说原著小说是给儿童的童话故事，而本书则是给成年人的奇幻小说。&lt;/p&gt;
@@ -108,41 +108,41 @@
     
     <item>
       <title>POLAR&#43;&#43;: Active One-shot Personalized Article Recommendation</title>
-      <link>https://duzx16.github.io/publication/tkde-19/</link>
+      <link>https://zxdu.xyz/publication/tkde-19/</link>
       <pubDate>Mon, 30 Sep 2019 11:19:52 +0800</pubDate>
-      <guid>https://duzx16.github.io/publication/tkde-19/</guid>
+      <guid>https://zxdu.xyz/publication/tkde-19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sequential Scenario-Specific Meta Learner for Online Recommendation</title>
-      <link>https://duzx16.github.io/publication/kdd-19/</link>
+      <link>https://zxdu.xyz/publication/kdd-19/</link>
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://duzx16.github.io/publication/kdd-19/</guid>
+      <guid>https://zxdu.xyz/publication/kdd-19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>https://duzx16.github.io/blog/</link>
+      <link>https://zxdu.xyz/blog/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://duzx16.github.io/blog/</guid>
+      <guid>https://zxdu.xyz/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EFCNN: A Restricted Convolutional Neural Network for Expert Finding</title>
-      <link>https://duzx16.github.io/publication/pakdd-19/</link>
+      <link>https://zxdu.xyz/publication/pakdd-19/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://duzx16.github.io/publication/pakdd-19/</guid>
+      <guid>https://zxdu.xyz/publication/pakdd-19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>POLAR: Attention-Based CNN for One-Shot Personalized Article Recommendation</title>
-      <link>https://duzx16.github.io/publication/pkdd-18/</link>
+      <link>https://zxdu.xyz/publication/pkdd-18/</link>
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>https://duzx16.github.io/publication/pkdd-18/</guid>
+      <guid>https://zxdu.xyz/publication/pkdd-18/</guid>
       <description></description>
     </item>
     

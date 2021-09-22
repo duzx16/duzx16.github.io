@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | Zhengxiao Du</title>
-    <link>https://duzx16.github.io/authors/</link>
-      <atom:link href="https://duzx16.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://zxdu.xyz/authors/</link>
+      <atom:link href="https://zxdu.xyz/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 15 Oct 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://duzx16.github.io/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
+      <url>https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
       <title>Authors</title>
-      <link>https://duzx16.github.io/authors/</link>
+      <link>https://zxdu.xyz/authors/</link>
     </image>
     
   </channel>

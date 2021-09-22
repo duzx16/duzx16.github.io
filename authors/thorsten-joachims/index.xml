@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thorsten Joachims | Zhengxiao Du</title>
-    <link>https://duzx16.github.io/authors/thorsten-joachims/</link>
-      <atom:link href="https://duzx16.github.io/authors/thorsten-joachims/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://zxdu.xyz/authors/thorsten-joachims/</link>
+      <atom:link href="https://zxdu.xyz/authors/thorsten-joachims/index.xml" rel="self" type="application/rss+xml" />
     <description>Thorsten Joachims</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 11 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://duzx16.github.io/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
+      <url>https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
       <title>Thorsten Joachims</title>
-      <link>https://duzx16.github.io/authors/thorsten-joachims/</link>
+      <link>https://zxdu.xyz/authors/thorsten-joachims/</link>
     </image>
     
     <item>
       <title>Policy-Gradient Training of Fair and Unbiased Ranking Functions</title>
-      <link>https://duzx16.github.io/publication/fair-19/</link>
+      <link>https://zxdu.xyz/publication/fair-19/</link>
       <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://duzx16.github.io/publication/fair-19/</guid>
+      <guid>https://zxdu.xyz/publication/fair-19/</guid>
       <description></description>
     </item>
     
