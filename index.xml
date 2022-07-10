@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>用vaultwarden搭建自己的密码管理服务</title>
+      <title>用Vaultwarden搭建自己的密码管理服务</title>
       <link>https://zxdu.xyz/post/bitwarden/</link>
       <pubDate>Sun, 10 Jul 2022 23:35:00 +0800</pubDate>
       <guid>https://zxdu.xyz/post/bitwarden/</guid>
@@ -22,9 +22,9 @@
 &lt;p&gt;为了解决这一问题，密码管理服务应运而生。密码管理服务为用户提供了存储互联网账户的用户名和密码的服务，往往还会和浏览器、手机操作系统等结合，提供自动填充、自动记录等功能。在安全性方面，无论是存储在本地还是云端，都会用用户设置的密码进行加密。有了密码管理服务，我们就可以给每个互联网账户使用随机生成的强密码。最常见的密码管理服务就是Chrome、Edge等浏览器自带的密码自动填充功能和iOS、MacOS提供的系统级密码管理。我之前使用的也是Chrome的自动填充功能，但是这个功能毕竟是绑定了Chrome浏览器和谷歌账号。这就限制了浏览器的选择，比如前段时间使用Chromium内核的Edge很火，但是因为自己的互联网账号密码都保存在Chrome上，所以无法尝试。类似的，苹果的密码管理服务也不方便在Windows和Android下使用。因此我最近决定迁移到相对独立的密码管理软件上。&lt;/p&gt;
 &lt;h2 id=&#34;为什么选择bitwarden&#34;&gt;为什么选择BitWarden&lt;/h2&gt;
 &lt;p&gt;密码管理服务的安全性来自于现代加密算法，在无法攻破加密密码的情况下是无法获得加密内容的。但是为了能够在不同的设备上使用保管的密码，我们必须依赖于云端服务。而一旦涉及到云服务，就存在着很大的不确定性，因为我们很难检查服务器上实际运行的代码。这也是我没有选择很热门的1Password的原因。&lt;/p&gt;
-&lt;p&gt;BitWarden是前后端均开源的密码管理服务器，并且还支持由用户自己搭建后端服务。当然实际中大家使用更多的是&lt;a href=&#34;https://github.com/dani-garcia/vaultwarden&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vaultwarden&lt;/a&gt;（原名为BitWarden_RS）这个非官方简化版后端实现，因为它占用的资源更少。同时BitWarden的前端也有很好的跨平台支持，对主流的浏览器和操作系统都提供了支持。&lt;/p&gt;
-&lt;h2 id=&#34;如何搭建自己的vaultwarden服务&#34;&gt;如何搭建自己的vaultwarden服务&lt;/h2&gt;
-&lt;p&gt;首先用docker容器运行vaultwarden服务&lt;/p&gt;
+&lt;p&gt;BitWarden是前后端均开源的密码管理服务器，并且还支持由用户自己搭建后端服务。当然实际中大家使用更多的是&lt;a href=&#34;https://github.com/dani-garcia/vaultwarden&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vaultwarden&lt;/a&gt;（原名为BitWarden_RS）这个非官方简化版后端实现，因为它占用的资源更少。同时BitWarden的前端也有很好的跨平台支持，对主流的浏览器和操作系统都提供了支持。&lt;/p&gt;
+&lt;h2 id=&#34;如何搭建自己的vaultwarden服务&#34;&gt;如何搭建自己的Vaultwarden服务&lt;/h2&gt;
+&lt;p&gt;首先用docker容器运行Vaultwarden服务&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker pull vaultwarden/server:latest
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir /vw-data &lt;span class=&#34;c1&#34;&gt;# this is used for permanent data storage&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker run -d --name vaultwarden &lt;span class=&#34;se&#34;&gt;\
@@ -87,7 +87,7 @@ server {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后就可以在www.example.com中访问自己的BitWarden服务了。在使用各个平台的BitWarden插件和客户端的时候，要在登陆之前先进行设置，将服务地址修改为www.example.com。&lt;/p&gt;
-&lt;h2 id=&#34;更新vaultwarden镜像&#34;&gt;更新vaultwarden镜像&lt;/h2&gt;
+&lt;h2 id=&#34;更新vaultwarden镜像&#34;&gt;更新Vaultwarden镜像&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Pull the latest version&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker pull vaultwarden/server:latest
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -101,7 +101,14 @@ server {
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt; -v /vw-data/:/data/ &lt;span class=&#34;se&#34;&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt; -p 10020:80 -p 3012:3012 &lt;span class=&#34;se&#34;&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt; vaultwarden/server:latest
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;参考文献&#34;&gt;参考文献&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Installing Vaultwarden formally bitwarden_rs on Ubuntu 20.04 with Nginx. &lt;a href=&#34;https://www.llewellynhughes.co.uk/post/installing-vaultwarden&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.llewellynhughes.co.uk/post/installing-vaultwarden&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Vaultwarden Wiki. &lt;a href=&#34;https://github.com/dani-garcia/vaultwarden/wiki&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/dani-garcia/vaultwarden/wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+</description>
     </item>
     
     <item>

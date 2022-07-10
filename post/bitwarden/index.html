@@ -64,7 +64,7 @@
   
     
   
-  <meta name="description" content="vaultwarden tutorial" />
+  <meta name="description" content="Vaultwarden tutorial" />
 
   
   <link rel="alternate" hreflang="en-us" href="https://zxdu.xyz/post/bitwarden/" />
@@ -309,8 +309,8 @@
   
   <meta property="og:site_name" content="Zhengxiao Du" />
   <meta property="og:url" content="https://zxdu.xyz/post/bitwarden/" />
-  <meta property="og:title" content="用vaultwarden搭建自己的密码管理服务 | Zhengxiao Du" />
-  <meta property="og:description" content="vaultwarden tutorial" /><meta property="og:image" content="https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:title" content="用Vaultwarden搭建自己的密码管理服务 | Zhengxiao Du" />
+  <meta property="og:description" content="Vaultwarden tutorial" /><meta property="og:image" content="https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -345,7 +345,7 @@
     "@type": "WebPage",
     "@id": "https://zxdu.xyz/post/bitwarden/"
   },
-  "headline": "用vaultwarden搭建自己的密码管理服务",
+  "headline": "用Vaultwarden搭建自己的密码管理服务",
   
   "datePublished": "2022-07-10T23:35:00+08:00",
   "dateModified": "2022-07-10T23:35:00+08:00",
@@ -363,7 +363,7 @@
       "url": "https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "vaultwarden tutorial"
+  "description": "Vaultwarden tutorial"
 }
 </script>
 
@@ -379,7 +379,7 @@
 
 
 
-  <title>用vaultwarden搭建自己的密码管理服务 | Zhengxiao Du</title>
+  <title>用Vaultwarden搭建自己的密码管理服务 | Zhengxiao Du</title>
 </head>
 
 
@@ -768,7 +768,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>用vaultwarden搭建自己的密码管理服务</h1>
+  <h1>用Vaultwarden搭建自己的密码管理服务</h1>
 
   
 
@@ -843,9 +843,9 @@
 <p>为了解决这一问题，密码管理服务应运而生。密码管理服务为用户提供了存储互联网账户的用户名和密码的服务，往往还会和浏览器、手机操作系统等结合，提供自动填充、自动记录等功能。在安全性方面，无论是存储在本地还是云端，都会用用户设置的密码进行加密。有了密码管理服务，我们就可以给每个互联网账户使用随机生成的强密码。最常见的密码管理服务就是Chrome、Edge等浏览器自带的密码自动填充功能和iOS、MacOS提供的系统级密码管理。我之前使用的也是Chrome的自动填充功能，但是这个功能毕竟是绑定了Chrome浏览器和谷歌账号。这就限制了浏览器的选择，比如前段时间使用Chromium内核的Edge很火，但是因为自己的互联网账号密码都保存在Chrome上，所以无法尝试。类似的，苹果的密码管理服务也不方便在Windows和Android下使用。因此我最近决定迁移到相对独立的密码管理软件上。</p>
 <h2 id="为什么选择bitwarden">为什么选择BitWarden</h2>
 <p>密码管理服务的安全性来自于现代加密算法，在无法攻破加密密码的情况下是无法获得加密内容的。但是为了能够在不同的设备上使用保管的密码，我们必须依赖于云端服务。而一旦涉及到云服务，就存在着很大的不确定性，因为我们很难检查服务器上实际运行的代码。这也是我没有选择很热门的1Password的原因。</p>
-<p>BitWarden是前后端均开源的密码管理服务器，并且还支持由用户自己搭建后端服务。当然实际中大家使用更多的是<a href="https://github.com/dani-garcia/vaultwarden" target="_blank" rel="noopener">vaultwarden</a>（原名为BitWarden_RS）这个非官方简化版后端实现，因为它占用的资源更少。同时BitWarden的前端也有很好的跨平台支持，对主流的浏览器和操作系统都提供了支持。</p>
-<h2 id="如何搭建自己的vaultwarden服务">如何搭建自己的vaultwarden服务</h2>
-<p>首先用docker容器运行vaultwarden服务</p>
+<p>BitWarden是前后端均开源的密码管理服务器，并且还支持由用户自己搭建后端服务。当然实际中大家使用更多的是<a href="https://github.com/dani-garcia/vaultwarden" target="_blank" rel="noopener">Vaultwarden</a>（原名为BitWarden_RS）这个非官方简化版后端实现，因为它占用的资源更少。同时BitWarden的前端也有很好的跨平台支持，对主流的浏览器和操作系统都提供了支持。</p>
+<h2 id="如何搭建自己的vaultwarden服务">如何搭建自己的Vaultwarden服务</h2>
+<p>首先用docker容器运行Vaultwarden服务</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker pull vaultwarden/server:latest
 </span></span><span class="line"><span class="cl">mkdir /vw-data <span class="c1"># this is used for permanent data storage</span>
 </span></span><span class="line"><span class="cl">docker run -d --name vaultwarden <span class="se">\
@@ -908,7 +908,7 @@ server {
   }
 }
 </code></pre><p>然后就可以在www.example.com中访问自己的BitWarden服务了。在使用各个平台的BitWarden插件和客户端的时候，要在登陆之前先进行设置，将服务地址修改为www.example.com。</p>
-<h2 id="更新vaultwarden镜像">更新vaultwarden镜像</h2>
+<h2 id="更新vaultwarden镜像">更新Vaultwarden镜像</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Pull the latest version</span>
 </span></span><span class="line"><span class="cl">docker pull vaultwarden/server:latest
 </span></span><span class="line"><span class="cl">
@@ -922,7 +922,14 @@ server {
 </span></span></span><span class="line"><span class="cl"><span class="se"></span> -v /vw-data/:/data/ <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span> -p 10020:80 -p 3012:3012 <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span> vaultwarden/server:latest
-</span></span></code></pre></div>
+</span></span></code></pre></div><h2 id="参考文献">参考文献</h2>
+<blockquote>
+<ol>
+<li>Installing Vaultwarden formally bitwarden_rs on Ubuntu 20.04 with Nginx. <a href="https://www.llewellynhughes.co.uk/post/installing-vaultwarden" target="_blank" rel="noopener">https://www.llewellynhughes.co.uk/post/installing-vaultwarden</a></li>
+<li>Vaultwarden Wiki. <a href="https://github.com/dani-garcia/vaultwarden/wiki" target="_blank" rel="noopener">https://github.com/dani-garcia/vaultwarden/wiki</a></li>
+</ol>
+</blockquote>
+
     </div>
 
     
@@ -943,7 +950,7 @@ server {
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://zxdu.xyz/post/bitwarden/&amp;text=%e7%94%a8vaultwarden%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e6%9c%8d%e5%8a%a1" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://zxdu.xyz/post/bitwarden/&amp;text=%e7%94%a8Vaultwarden%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e6%9c%8d%e5%8a%a1" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -956,7 +963,7 @@ server {
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://zxdu.xyz/post/bitwarden/&amp;t=%e7%94%a8vaultwarden%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e6%9c%8d%e5%8a%a1" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
+        <a href="https://www.facebook.com/sharer.php?u=https://zxdu.xyz/post/bitwarden/&amp;t=%e7%94%a8Vaultwarden%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e6%9c%8d%e5%8a%a1" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -969,7 +976,7 @@ server {
       
       
       <li>
-        <a href="mailto:?subject=%e7%94%a8vaultwarden%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e6%9c%8d%e5%8a%a1&amp;body=https://zxdu.xyz/post/bitwarden/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=%e7%94%a8Vaultwarden%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e6%9c%8d%e5%8a%a1&amp;body=https://zxdu.xyz/post/bitwarden/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -982,7 +989,7 @@ server {
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://zxdu.xyz/post/bitwarden/&amp;title=%e7%94%a8vaultwarden%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e6%9c%8d%e5%8a%a1" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https://zxdu.xyz/post/bitwarden/&amp;title=%e7%94%a8Vaultwarden%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e6%9c%8d%e5%8a%a1" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -995,7 +1002,7 @@ server {
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=%e7%94%a8vaultwarden%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e6%9c%8d%e5%8a%a1%20https://zxdu.xyz/post/bitwarden/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="https://web.whatsapp.com/send?text=%e7%94%a8Vaultwarden%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e6%9c%8d%e5%8a%a1%20https://zxdu.xyz/post/bitwarden/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1008,7 +1015,7 @@ server {
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://zxdu.xyz/post/bitwarden/&amp;title=%e7%94%a8vaultwarden%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e6%9c%8d%e5%8a%a1" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://zxdu.xyz/post/bitwarden/&amp;title=%e7%94%a8Vaultwarden%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e6%9c%8d%e5%8a%a1" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
