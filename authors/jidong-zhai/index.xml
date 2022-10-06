@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jidong Zhai | Zhengxiao Du</title>
+    <link>https://zxdu.xyz/authors/jidong-zhai/</link>
+      <atom:link href="https://zxdu.xyz/authors/jidong-zhai/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jidong Zhai</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 05 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
+      <title>Jidong Zhai</title>
+      <link>https://zxdu.xyz/authors/jidong-zhai/</link>
+    </image>
+    
+    <item>
+      <title>GLM-130B: An Open Bilingual Pre-Trained Model</title>
+      <link>https://zxdu.xyz/publication/glm-130b/</link>
+      <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://zxdu.xyz/publication/glm-130b/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

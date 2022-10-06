@@ -5,7 +5,7 @@
     <link>https://zxdu.xyz/publication-type/1/</link>
       <atom:link href="https://zxdu.xyz/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 11 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 15 Mar 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
@@ -13,10 +13,34 @@
     </image>
     
     <item>
+      <title>GLM: General Language Model Pretraining with Autoregressive Blank Infilling</title>
+      <link>https://zxdu.xyz/publication/glm-21/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://zxdu.xyz/publication/glm-21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>P-Tuning: Prompt Tuning Can Be Comparable to Fine-tuning Across Scales and Tasks</title>
+      <link>https://zxdu.xyz/publication/p-tuning-v2/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://zxdu.xyz/publication/p-tuning-v2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Policy-Gradient Training of Fair and Unbiased Ranking Functions</title>
       <link>https://zxdu.xyz/publication/fair-19/</link>
       <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://zxdu.xyz/publication/fair-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sequential Scenario-Specific Meta Learner for Online Recommendation</title>
+      <link>https://zxdu.xyz/publication/kdd-19/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://zxdu.xyz/publication/kdd-19/</guid>
       <description></description>
     </item>
     
