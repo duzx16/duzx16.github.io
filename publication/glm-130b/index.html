@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en-us" >
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: July 21, 2023 --><html lang="en-us" >
 
 
 <head>
@@ -8,8 +10,22 @@
   
   
   
-    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
   
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 
   
   
@@ -48,281 +64,276 @@
 
   
   
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.047268c6dd09ad74ba54a0ba71837064.css" media="print" onload="this.media='all'">
+
   
   
   
     
     
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
     
   
+
   
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.042e26407c9e383d96a1f26d6787c686.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
 
   <meta name="author" content="Zhengxiao Du" />
 
-  
-  
-  
-    
-  
-  <meta name="description" content="We introduce GLM-130B, a bilingual (English and Chinese) pre-trained language model with 130 billion parameters. It is an attempt to open-source a 100B-scale model at least as good as GPT-3 and unveil how models of such a scale can be successfully pre-trained. Over the course of this effort, we face numerous unexpected technical and engineering challenges, particularly on loss spikes and disconvergence. In this paper, we introduce the training process of GLM-130B including its design choices, training strategies for both efficiency and stability, and engineering efforts. The resultant GLM-130B model offers significant outperformance over GPT-3 175B on a wide range of popular English benchmarks while the performance advantage is not observed in OPT-175B and BLOOM-176B. It also consistently and significantly outperforms ERNIE TITAN 3.0 260B -- the largest Chinese language model -- across related benchmarks. Finally, we leverage a unique scaling property of GLM-130B to reach INT4 quantization, without quantization aware training and with almost no performance loss, making it the first among 100B-scale models. More importantly, the property allows its effective inference on 4×RTX 3090 (24G) or 8×RTX 2080 Ti (11G) GPUs, the most ever affordable GPUs required for using 100B-scale models. The GLM-130B model weights are publicly accessible and its code, training logs, related toolkit, and lessons learned are open-sourced at https://github.com/THUDM/GLM-130B" />
 
-  
-  <link rel="alternate" hreflang="en-us" href="https://zxdu.xyz/publication/glm-130b/" />
-
-  
-  
-  
-    <meta name="theme-color" content="#1565c0" />
-  
-
-  
-  
-
-  
-
-  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
-
-  
-  
-  
-    
-    
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
-
-    
-    
-    
-    
-      
-      
-    
-    
-    
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-        
-      
-    
-
-    
-    
-    
-
-    
-
-    
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-        
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-  
-
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/wowchemy.1052fab8b7700a3dc49ee23683097d66.css" />
-
-  
 
 
 
   
 
+<meta name="description" content="We introduce GLM-130B, a bilingual (English and Chinese) pre-trained language model with 130 billion parameters. It is an attempt to open-source a 100B-scale model at least as good as GPT-3 and unveil how models of such a scale can be successfully pre-trained. Over the course of this effort, we face numerous unexpected technical and engineering challenges, particularly on loss spikes and disconvergence. In this paper, we introduce the training process of GLM-130B including its design choices, training strategies for both efficiency and stability, and engineering efforts. The resultant GLM-130B model offers significant outperformance over GPT-3 175B on a wide range of popular English benchmarks while the performance advantage is not observed in OPT-175B and BLOOM-176B. It also consistently and significantly outperforms ERNIE TITAN 3.0 260B -- the largest Chinese language model -- across related benchmarks. Finally, we leverage a unique scaling property of GLM-130B to reach INT4 quantization, without quantization aware training and with almost no performance loss, making it the first among 100B-scale models. More importantly, the property allows its effective inference on 4×RTX 3090 (24G) or 8×RTX 2080 Ti (11G) GPUs, the most ever affordable GPUs required for using 100B-scale models. The GLM-130B model weights are publicly accessible and its code, training logs, related toolkit, and lessons learned are open-sourced at https://github.com/THUDM/GLM-130B" />
 
-  
 
 
-  
+<link rel="alternate" hreflang="en-us" href="https://zxdu.xyz/publication/glm-130b/" />
+<link rel="canonical" href="https://zxdu.xyz/publication/glm-130b/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
 
 
 
 
   
   
-  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@wowchemy" />
+  <meta property="twitter:creator" content="@wowchemy" />
+<meta property="twitter:image" content="https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="Zhengxiao Du" />
+<meta property="og:url" content="https://zxdu.xyz/publication/glm-130b/" />
+<meta property="og:title" content="GLM-130B: An Open Bilingual Pre-Trained Model | Zhengxiao Du" />
+<meta property="og:description" content="We introduce GLM-130B, a bilingual (English and Chinese) pre-trained language model with 130 billion parameters. It is an attempt to open-source a 100B-scale model at least as good as GPT-3 and unveil how models of such a scale can be successfully pre-trained. Over the course of this effort, we face numerous unexpected technical and engineering challenges, particularly on loss spikes and disconvergence. In this paper, we introduce the training process of GLM-130B including its design choices, training strategies for both efficiency and stability, and engineering efforts. The resultant GLM-130B model offers significant outperformance over GPT-3 175B on a wide range of popular English benchmarks while the performance advantage is not observed in OPT-175B and BLOOM-176B. It also consistently and significantly outperforms ERNIE TITAN 3.0 260B -- the largest Chinese language model -- across related benchmarks. Finally, we leverage a unique scaling property of GLM-130B to reach INT4 quantization, without quantization aware training and with almost no performance loss, making it the first among 100B-scale models. More importantly, the property allows its effective inference on 4×RTX 3090 (24G) or 8×RTX 2080 Ti (11G) GPUs, the most ever affordable GPUs required for using 100B-scale models. The GLM-130B model weights are publicly accessible and its code, training logs, related toolkit, and lessons learned are open-sourced at https://github.com/THUDM/GLM-130B" /><meta property="og:image" content="https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
-
-  
-    <link rel="manifest" href="/manifest.webmanifest" />
-  
-
-  <link rel="icon" type="image/png" href="/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_180x180_fill_lanczos_center_3.png" />
-
-  <link rel="canonical" href="https://zxdu.xyz/publication/glm-130b/" />
-
+    <meta
+      property="article:published_time"
+      content="2022-10-05T00:00:00&#43;00:00"
+    />
   
   
-  
-  
-  
-  
-  
-  
-    
-    
-  
-  
-
-  
-  
-    
-    
-  
-  <meta property="twitter:card" content="summary" />
-  
-    <meta property="twitter:site" content="@wowchemy" />
-    <meta property="twitter:creator" content="@wowchemy" />
-  
-  <meta property="og:site_name" content="Zhengxiao Du" />
-  <meta property="og:url" content="https://zxdu.xyz/publication/glm-130b/" />
-  <meta property="og:title" content="GLM-130B: An Open Bilingual Pre-Trained Model | Zhengxiao Du" />
-  <meta property="og:description" content="We introduce GLM-130B, a bilingual (English and Chinese) pre-trained language model with 130 billion parameters. It is an attempt to open-source a 100B-scale model at least as good as GPT-3 and unveil how models of such a scale can be successfully pre-trained. Over the course of this effort, we face numerous unexpected technical and engineering challenges, particularly on loss spikes and disconvergence. In this paper, we introduce the training process of GLM-130B including its design choices, training strategies for both efficiency and stability, and engineering efforts. The resultant GLM-130B model offers significant outperformance over GPT-3 175B on a wide range of popular English benchmarks while the performance advantage is not observed in OPT-175B and BLOOM-176B. It also consistently and significantly outperforms ERNIE TITAN 3.0 260B -- the largest Chinese language model -- across related benchmarks. Finally, we leverage a unique scaling property of GLM-130B to reach INT4 quantization, without quantization aware training and with almost no performance loss, making it the first among 100B-scale models. More importantly, the property allows its effective inference on 4×RTX 3090 (24G) or 8×RTX 2080 Ti (11G) GPUs, the most ever affordable GPUs required for using 100B-scale models. The GLM-130B model weights are publicly accessible and its code, training logs, related toolkit, and lessons learned are open-sourced at https://github.com/THUDM/GLM-130B" /><meta property="og:image" content="https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png" />
-    <meta property="twitter:image" content="https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
-  
-    
-      <meta
-        property="article:published_time"
-        content="2022-10-05T00:00:00&#43;00:00"
-      />
-    
     <meta property="article:modified_time" content="2022-10-05T00:00:00&#43;00:00">
   
 
-  
+
+
+
 
 
     
@@ -369,15 +380,37 @@
 
   
 
+
+
+
+  
+  
+  
+
+  
   
 
   
 
 
-
-
-
+  
   <title>GLM-130B: An Open Bilingual Pre-Trained Model | Zhengxiao Du</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
 
@@ -392,7 +425,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.e22a2a20712150175b9cd707be2d0584.js"></script>
+  <script src="/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
 
   
 
@@ -436,8 +469,12 @@
 
 
 
-  <div class="page-header">
-    
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
 
 
 
@@ -450,7 +487,7 @@
 
 
 
-<header class="header--fixed">
+<header>
   <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
     <div class="container-xl">
 
@@ -702,6 +739,7 @@
 
         
         
+        
         <li class="nav-item">
           <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
         </li>
@@ -757,6 +795,7 @@
 <div class="pub">
 
   
+
 
 
 
@@ -960,6 +999,7 @@
 
 
 
+
 <div class="share-box">
   <ul class="share">
     
@@ -970,8 +1010,12 @@
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://zxdu.xyz/publication/glm-130b/&amp;text=GLM-130B:%20An%20Open%20Bilingual%20Pre-Trained%20Model" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-130b%2F&amp;text=GLM-130B%3A&#43;An&#43;Open&#43;Bilingual&#43;Pre-Trained&#43;Model" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -983,8 +1027,12 @@
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://zxdu.xyz/publication/glm-130b/&amp;t=GLM-130B:%20An%20Open%20Bilingual%20Pre-Trained%20Model" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-130b%2F&amp;t=GLM-130B%3A&#43;An&#43;Open&#43;Bilingual&#43;Pre-Trained&#43;Model" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -996,8 +1044,14 @@
       
       
       
+      
+      
+      
+      
+        
+      
       <li>
-        <a href="mailto:?subject=GLM-130B:%20An%20Open%20Bilingual%20Pre-Trained%20Model&amp;body=https://zxdu.xyz/publication/glm-130b/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=GLM-130B%3A%20An%20Open%20Bilingual%20Pre-Trained%20Model&amp;body=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-130b%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1009,8 +1063,12 @@
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://zxdu.xyz/publication/glm-130b/&amp;title=GLM-130B:%20An%20Open%20Bilingual%20Pre-Trained%20Model" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-130b%2F&amp;title=GLM-130B%3A&#43;An&#43;Open&#43;Bilingual&#43;Pre-Trained&#43;Model" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1022,8 +1080,12 @@
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="https://web.whatsapp.com/send?text=GLM-130B:%20An%20Open%20Bilingual%20Pre-Trained%20Model%20https://zxdu.xyz/publication/glm-130b/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="https://web.whatsapp.com/send?text=GLM-130B%3A&#43;An&#43;Open&#43;Bilingual&#43;Pre-Trained&#43;Model%20https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-130b%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1035,8 +1097,12 @@
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://zxdu.xyz/publication/glm-130b/&amp;title=GLM-130B:%20An%20Open%20Bilingual%20Pre-Trained%20Model" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-130b%2F&amp;title=GLM-130B%3A&#43;An&#43;Open&#43;Bilingual&#43;Pre-Trained&#43;Model" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1265,14 +1331,27 @@
 
 
 
-  
+
+
+
+
+
+
+
+
 
   
-
+  
+  
+  
   
 
-  
-  
+
+
+
+
+
+
 
 
 
@@ -1315,6 +1394,7 @@
 
 
 
+
   <p class="powered-by">
     
     
@@ -1334,111 +1414,102 @@
     
   </div>
 
-      
+  
 
-    
-    <script src="/js/vendor-bundle.min.92d2024afaa4dce0cad42ba360879ce9.js"></script>
 
-    
-    
-    
-      
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
 
-      
-      
 
-      
 
-      
-        
-        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
-        
-        
-        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
-        
-        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
-        
-      
 
-    
+  
 
-    
-    
-    
+  
+  
 
-    
-    
+  
 
-    
-    
-    
-      
-      <script id="search-hit-fuse-template" type="text/x-template">
-        <div class="search-hit" id="summary-{{key}}">
-          <div class="search-hit-content">
-            <div class="search-hit-name">
-              <a href="{{relpermalink}}">{{title}}</a>
-              <div class="article-metadata search-hit-type">{{type}}</div>
-              <p class="search-hit-description">{{snippet}}</p>
-            </div>
-          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
         </div>
-      </script>
-      
-        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
-      
-    
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
 
-    
-    
 
-    
-    
-    
-    
 
-    
-    
-      
-      
-      
-      
-      
-      
-      
-    
 
-    
 
-    
-    
-    
-    <script id="page-data" type="application/json">{"use_headroom":true}</script>
 
-    
-    
-      <script src="/js/wowchemy-headroom.e8fd2d733eef6a8bbbe0539398fc0547.js" type="module"></script>
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="/en/js/wowchemy.min.de33c90527762392d440555c36739dd9.js"></script>
 
-    
-    
-    
-    
-    
-    
-      
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.ead4a376bcf2c4714888c770ea9b0040.js"></script>
+
+
+
+
+
+
+
+  
 <div id="modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -1449,7 +1520,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
+        
+        <pre><code></code></pre>
       </div>
       <div class="modal-footer">
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
@@ -1464,7 +1536,20 @@
   </div>
 </div>
 
-      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
