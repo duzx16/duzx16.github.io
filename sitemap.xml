@@ -2,15 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://zxdu.xyz/authors/</loc>
+    <lastmod>2022-10-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zxdu.xyz/categories/</loc>
+    <lastmod>2022-07-10T23:35:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zxdu.xyz/post/</loc>
+    <lastmod>2022-07-10T23:35:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zxdu.xyz/authors/zhengxiao-du/</loc>
+    <lastmod>2022-07-10T23:35:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zxdu.xyz/</loc>
+    <lastmod>2022-10-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zxdu.xyz/post/mhla/</loc>
+    <lastmod>2020-02-22T21:26:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zxdu.xyz/category/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2022-07-10T23:35:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://zxdu.xyz/publication-type/3/</loc>
     <lastmod>2022-10-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zxdu.xyz/authors/aohan-zeng/</loc>
-    <lastmod>2022-10-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zxdu.xyz/authors/</loc>
     <lastmod>2022-10-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -78,10 +102,6 @@
     <lastmod>2022-10-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://zxdu.xyz/</loc>
-    <lastmod>2022-10-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://zxdu.xyz/authors/admin/</loc>
     <lastmod>2022-10-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -96,22 +116,6 @@
   </url><url>
     <loc>https://zxdu.xyz/authors/zixuan-ma/</loc>
     <lastmod>2022-10-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zxdu.xyz/categories/</loc>
-    <lastmod>2022-07-10T23:35:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zxdu.xyz/post/</loc>
-    <lastmod>2022-07-10T23:35:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zxdu.xyz/authors/zhengxiao-du/</loc>
-    <lastmod>2022-07-10T23:35:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zxdu.xyz/category/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2022-07-10T23:35:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zxdu.xyz/post/bitwarden/</loc>
