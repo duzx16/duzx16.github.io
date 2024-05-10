@@ -5,7 +5,7 @@
     <link>https://zxdu.xyz/post/</link>
       <atom:link href="https://zxdu.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 22 Feb 2024 21:26:09 +0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 09 May 2024 21:26:09 +0800</lastBuildDate>
     <image>
       <url>https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
@@ -15,7 +15,7 @@
     <item>
       <title>关于 MHLA（Multi-Head Latent Attention）的一些分析</title>
       <link>https://zxdu.xyz/post/mhla/</link>
-      <pubDate>Thu, 22 Feb 2024 21:26:09 +0800</pubDate>
+      <pubDate>Thu, 09 May 2024 21:26:09 +0800</pubDate>
       <guid>https://zxdu.xyz/post/mhla/</guid>
       <description>&lt;p&gt;原始的 Multi-Head Attention 的计算公式为（单个head，暂时先不考虑 RoPE）&lt;/p&gt;
 &lt;p&gt;$$
