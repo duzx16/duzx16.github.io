@@ -5,12 +5,20 @@
     <link>https://zxdu.xyz/authors/aohan-zeng/</link>
       <atom:link href="https://zxdu.xyz/authors/aohan-zeng/index.xml" rel="self" type="application/rss+xml" />
     <description>Aohan Zeng</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 05 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 23 Mar 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
       <title>Aohan Zeng</title>
       <link>https://zxdu.xyz/authors/aohan-zeng/</link>
     </image>
+    
+    <item>
+      <title>Understanding Emergent Abilities of Language Models from the Loss Perspective</title>
+      <link>https://zxdu.xyz/publication/neurips-24/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://zxdu.xyz/publication/neurips-24/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>GLM-130B: An Open Bilingual Pre-Trained Model</title>
