@@ -280,12 +280,12 @@
 
   
 
-<meta name="description" content="" />
+<meta name="description" content="如何拯救不能用FP16推理的Transformer" />
 
 
 
-<link rel="alternate" hreflang="en-us" href="https://zxdu.xyz/publication/pakdd-19/" />
-<link rel="canonical" href="https://zxdu.xyz/publication/pakdd-19/" />
+<link rel="alternate" hreflang="en-us" href="https://zxdu.xyz/post/fix-fp16-transformer/" />
+<link rel="canonical" href="https://zxdu.xyz/post/fix-fp16-transformer/" />
 
 
 
@@ -327,18 +327,18 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Zhengxiao Du" />
-<meta property="og:url" content="https://zxdu.xyz/publication/pakdd-19/" />
-<meta property="og:title" content="EFCNN: A Restricted Convolutional Neural Network for Expert Finding | Zhengxiao Du" />
-<meta property="og:description" content="" /><meta property="og:image" content="https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:url" content="https://zxdu.xyz/post/fix-fp16-transformer/" />
+<meta property="og:title" content="如何拯救不能用FP16推理的Transformer | Zhengxiao Du" />
+<meta property="og:description" content="如何拯救不能用FP16推理的Transformer" /><meta property="og:image" content="https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
       property="article:published_time"
-      content="2019-07-20T13:59:10&#43;00:00"
+      content="2024-06-05T18:00:00&#43;08:00"
     />
   
   
-    <meta property="article:modified_time" content="2019-01-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2024-06-05T18:00:00&#43;08:00">
   
 
 
@@ -353,25 +353,27 @@
 
 
 
+  
+
 
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://zxdu.xyz/publication/pakdd-19/"
+    "@id": "https://zxdu.xyz/post/fix-fp16-transformer/"
   },
-  "headline": "EFCNN: A Restricted Convolutional Neural Network for Expert Finding",
+  "headline": "如何拯救不能用FP16推理的Transformer",
   
-  "datePublished": "2019-07-20T13:59:10Z",
-  "dateModified": "2019-01-01T00:00:00Z",
+  "datePublished": "2024-06-05T18:00:00+08:00",
+  "dateModified": "2024-06-05T18:00:00+08:00",
   
   "author": {
     "@type": "Person",
-    "name": "Yifeng Zhao"
+    "name": "Zhengxiao Du"
   },
   
   "publisher": {
@@ -382,7 +384,7 @@
       "url": "https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": ""
+  "description": "如何拯救不能用FP16推理的Transformer"
 }
 </script>
 
@@ -404,7 +406,7 @@
 
 
   
-  <title>EFCNN: A Restricted Convolutional Neural Network for Expert Finding | Zhengxiao Du</title>
+  <title>如何拯救不能用FP16推理的Transformer | Zhengxiao Du</title>
 
   
   
@@ -424,7 +426,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="0289d880c699e53b73f74f6d184dc899" >
+<body id="top" data-spy="scroll"  data-target="#TableOfContents" class="page-wrapper   no-navbar" data-wc-page-id="172ea450c4ec1d854c467dac919190f9" >
 
   
   
@@ -487,322 +489,56 @@
   
 
 
-
-
-
-
-
-
-
-
-
-
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-    <div class="container-xl">
-
-      
-      <div class="d-none d-lg-inline-flex">
-        <a class="navbar-brand" href="/">Zhengxiao Du</a>
-      </div>
-      
-
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i class="fas fa-bars"></i></span>
-      </button>
-      
-
-      
-      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-        <a class="navbar-brand" href="/">Zhengxiao Du</a>
-      </div>
-      
-
-      
-      
-      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-
-        
-        <ul class="navbar-nav d-md-inline-flex">
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#about"><span>Home</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#experience"><span>Experience</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/blog"><span>Blog</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#publications"><span>Publications</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/files/CV.pdf"><span>CV</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#contact"><span>Contact</span></a>
-          </li>
-
-          
-          
-
-        
-
-          
-        </ul>
-      </div>
-
-      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-        
-        
-          
-        
-
-        
-        
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
-
-        
-        
-        
-        <li class="nav-item dropdown theme-dropdown">
-          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-            <i class="fas fa-moon" aria-hidden="true"></i>
-          </a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item js-set-theme-light">
-              <span>Light</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-dark">
-              <span>Dark</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-auto">
-              <span>Automatic</span>
-            </a>
-          </div>
-        </li>
-        
-
-        
-        
-
-      </ul>
-
-    </div>
-  </nav>
-</header>
-
-
   </div>
 
   <div class="page-body">
     
     
     
-
-    
-
-
+      
+      
+      <div class="article-container py-1" style="background: initial">
+        
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
   
     
+  
     
   
 
+    <li class="breadcrumb-item">
+      <a href="/">
+        
+          Home
+        
+      </a>
+    </li>
+  
 
-<div class="pub">
+    <li class="breadcrumb-item">
+      <a href="/post/">
+        
+          Posts
+        
+      </a>
+    </li>
+  
+
+      <li class="breadcrumb-item active" aria-current="page">
+        如何拯救不能用FP16推理的Transformer
+      </li>
+    </ol>
+  </nav>
+
+
+
+
+      </div>
+    
+
+    <article class="article">
 
   
 
@@ -824,7 +560,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>EFCNN: A Restricted Convolutional Neural Network for Expert Finding</h1>
+  <h1>如何拯救不能用FP16推理的Transformer</h1>
 
   
 
@@ -842,9 +578,7 @@
     
 
   <span >
-      <a href="/authors/yifeng-zhao/">Yifeng Zhao</a></span>, <span >
-      <a href="/authors/jie-tang/">Jie Tang</a></span>, <span class="author-highlighted">
-      <a href="/authors/admin/">Zhengxiao Du</a></span>
+      <a href="/authors/zhengxiao-du/">Zhengxiao Du</a></span>
   </div>
   
   
@@ -855,13 +589,18 @@
     
       
     
-    January, 2019
+    Jun 5, 2024
   </span>
   
 
   
 
   
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
 
   
   
@@ -869,6 +608,10 @@
   
 
   
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/%E6%8A%80%E6%9C%AF/">技术</a></span>
   
 
 </div>
@@ -886,44 +629,15 @@
 
   <div class="article-container">
 
-    
+    <div class="article-style">
+      <p>最近在准备 <a href="https://github.com/THUDM/GLM-4" target="_blank" rel="noopener">GLM-4-9B</a> 的开源版本的时候遇到了一个之前没有遇到过的问题，即模型的 activation 超过了 FP16 的表示范围，导致模型无法使用 fp16 进行推理。因为开源模型用户的硬件可能不支持 BF16 推理，所以让模型支持 FP16 推理还是有必要的。这里把解决这个问题的思路分享出来。</p>
+<p>FP16 和 BF16 是针对 FP32 的两种不同截断方式，两者都使用了 16 bit来表示浮点数。区别在于，BF16 用 8bit表示指数，7bit表示小数，而 FP16 用 5bit 表示指数，10bit表示小数（两者都需要 1bit 来表示正负），因此 BF16 的表示范围比 FP16 大，但是表示精度比 FP16 小。实践证明对于 Transformer 的训练来说表示范围比表示精度更重要，因此现在的预训练一般都使用 BF16 进行训练。但是 NV 的硬件是在最近才增加了对 BF16 的支持。因此对于比较老的硬件，仍然需要使用 FP16。</p>
+<p>Transformer 的精度可以进一步分为参数的精度和 activation 的精度。一般来说，activation 的范围要远大于参数的范围。因此 Transformer 推理时 activation 的精度比参数的精度更重要。通过使用一些量化方法，参数很容易量化到 8bit 甚至 4bit，但是 activation 的精度很难量化。我们在 GLM-4-9B 上遇到的就是 activation 的范围超过了 FP16 能够表示的范围。</p>
+<p>一个使用 PreNorm 的 Transformer 模型，其 activation 的计算公式为</p>
+<p>$$</p>
+<p>$$</p>
 
-    
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Type</div>
-          <div class="col-12 col-md-9">
-            <a href="/publication/#1">
-              1
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
     </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Advances in Knowledge Discovery and Data Mining - 23rd Pacific-Asia Conference, <strong>PAKDD 2019</strong></div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    <div class="space-below"></div>
-
-    <div class="article-style"></div>
 
     
 
@@ -948,7 +662,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fpakdd-19%2F&amp;text=EFCNN%3A&#43;A&#43;Restricted&#43;Convolutional&#43;Neural&#43;Network&#43;for&#43;Expert&#43;Finding" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fzxdu.xyz%2Fpost%2Ffix-fp16-transformer%2F&amp;text=%E5%A6%82%E4%BD%95%E6%8B%AF%E6%95%91%E4%B8%8D%E8%83%BD%E7%94%A8FP16%E6%8E%A8%E7%90%86%E7%9A%84Transformer" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -965,7 +679,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fpakdd-19%2F&amp;t=EFCNN%3A&#43;A&#43;Restricted&#43;Convolutional&#43;Neural&#43;Network&#43;for&#43;Expert&#43;Finding" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fzxdu.xyz%2Fpost%2Ffix-fp16-transformer%2F&amp;t=%E5%A6%82%E4%BD%95%E6%8B%AF%E6%95%91%E4%B8%8D%E8%83%BD%E7%94%A8FP16%E6%8E%A8%E7%90%86%E7%9A%84Transformer" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -984,7 +698,7 @@
         
       
       <li>
-        <a href="mailto:?subject=EFCNN%3A%20A%20Restricted%20Convolutional%20Neural%20Network%20for%20Expert%20Finding&amp;body=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fpakdd-19%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=%E5%A6%82%E4%BD%95%E6%8B%AF%E6%95%91%E4%B8%8D%E8%83%BD%E7%94%A8FP16%E6%8E%A8%E7%90%86%E7%9A%84Transformer&amp;body=https%3A%2F%2Fzxdu.xyz%2Fpost%2Ffix-fp16-transformer%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1001,7 +715,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fpakdd-19%2F&amp;title=EFCNN%3A&#43;A&#43;Restricted&#43;Convolutional&#43;Neural&#43;Network&#43;for&#43;Expert&#43;Finding" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fzxdu.xyz%2Fpost%2Ffix-fp16-transformer%2F&amp;title=%E5%A6%82%E4%BD%95%E6%8B%AF%E6%95%91%E4%B8%8D%E8%83%BD%E7%94%A8FP16%E6%8E%A8%E7%90%86%E7%9A%84Transformer" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1018,7 +732,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=EFCNN%3A&#43;A&#43;Restricted&#43;Convolutional&#43;Neural&#43;Network&#43;for&#43;Expert&#43;Finding%20https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fpakdd-19%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="https://web.whatsapp.com/send?text=%E5%A6%82%E4%BD%95%E6%8B%AF%E6%95%91%E4%B8%8D%E8%83%BD%E7%94%A8FP16%E6%8E%A8%E7%90%86%E7%9A%84Transformer%20https%3A%2F%2Fzxdu.xyz%2Fpost%2Ffix-fp16-transformer%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1035,7 +749,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fpakdd-19%2F&amp;title=EFCNN%3A&#43;A&#43;Restricted&#43;Convolutional&#43;Neural&#43;Network&#43;for&#43;Expert&#43;Finding" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fzxdu.xyz%2Fpost%2Ffix-fp16-transformer%2F&amp;title=%E5%A6%82%E4%BD%95%E6%8B%AF%E6%95%91%E4%B8%8D%E8%83%BD%E7%94%A8FP16%E6%8E%A8%E7%90%86%E7%9A%84Transformer" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1061,115 +775,71 @@
 
 
   
-    
 
 
 
 
-  
-    
 
 
 
   
   
   
-    
-  
-  
-  
-  <div class="media author-card content-widget-hr">
-    
-      
-      <a href="https://zxdu.xyz/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu7e2cbb0813f9c409aba9226cd1386a71_4073407_270x270_fill_lanczos_center_3.png" alt="Zhengxiao Du"></a>
-    
 
-    <div class="media-body">
-      <h5 class="card-title"><a href="https://zxdu.xyz/">Zhengxiao Du</a></h5>
-      <h6 class="card-subtitle">PhD Student</h6>
-      <p class="card-text">My research interests include machine learning and data mining.</p>
-      <ul class="network-icon" aria-hidden="true">
   
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://scholar.google.co.uk/citations?user=A8x07E0AAAAJ" target="_blank" rel="noopener">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://github.com/duzx16" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/files/CV.pdf" >
-        <i class="ai ai-cv"></i>
-      </a>
-    </li>
-  
-</ul>
 
-    </div>
+  
+  <section id="comments">
+    <div id="twikoo"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.32/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://twikoo.zxdu.xyz', 
+  el: '#twikoo', 
+  
+  
+  
+})
+</script>
+  </section>
+  
+
+
+
+
+<div class="article-widget">
+  
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/post/vector-quantize/" rel="next">从零学习 Vector Quantization</a>
   </div>
-
-
-  
-
-
-
-
-
-
-
   
   
   
-
-  
-
-  
-
-
-
-
-
-
-
-
-
-
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/post/mhla/" rel="prev">关于 MHLA（Multi-Head Latent Attention）的一些分析</a>
   </div>
+  
 </div>
+
+</div>
+
+
+
+
+  
+  
+
+
+
+
+  </div>
+</article>
   </div>
 
   <div class="page-footer">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: January 24, 2025 --><html lang="en-us" >
+<!-- Last Published: January 31, 2025 --><html lang="en-us" >
 
 
 <head>
@@ -280,12 +280,12 @@
 
   
 
-<meta name="description" content="peech language models (SpeechLMs) accept speech input and produce speech output, allowing for more natural human-computer interaction compared to text-based large language models (LLMs). Traditional approaches for developing SpeechLMs are constrained by the limited availability of unsupervised speech data and parallel speech-text data, which are significantly less abundant than text pre-training data, thereby limiting their scalability as LLMs. We propose a novel approach to scaling speech-text pre-training by leveraging large-scale synthetic interleaved data derived from text corpora, eliminating the need for parallel speech-text datasets. Our method efficiently constructs speech-text interleaved data by sampling text spans from existing text corpora and synthesizing corresponding speech spans using a text-to-token model, bypassing the need to generate actual speech. We also employ a supervised speech tokenizer derived from an automatic speech recognition (ASR) model by incorporating a vector-quantized bottleneck into the encoder. This supervised training approach results in discrete speech tokens with strong semantic preservation even at lower frame rates (e.g. 12.5Hz), while still maintaining speech reconstruction quality. Starting from a pre-trained language model and scaling our pre-training to 1 trillion tokens (with 600B synthetic interleaved speech-text data), we achieve state-of-the-art performance in speech language modeling and spoken question answering, improving performance on spoken questions tasks from the previous SOTA of 13% (Moshi) to 31%. We further demonstrate that by fine-tuning the pre-trained model with speech dialogue data, we can develop an end-to-end spoken chatbot that achieves competitive performance comparable to existing baselines in both conversational abilities and speech quality, even operating exclusively in the speech domain." />
+<meta name="description" content="We introduce GLM-4-Voice, an intelligent and human-like end-to-end spoken chatbot. It supports both Chinese and English, engages in real-time voice conversations, and varies vocal nuances such as emotion, intonation, speech rate, and dialect according to user instructions. GLM-4-Voice uses an ultra-low bitrate (175bps), single-codebook speech tokenizer with 12.5Hz frame rate derived from an automatic speech recognition (ASR) model by incorporating a vector-quantized bottleneck into the encoder. To efficiently transfer knowledge from text to speech modalities, we synthesize speech-text interleaved data from existing text pre-training corpora using a text-to-token model. We continue pre-training from the pre-trained text language model GLM-4-9B with a combination of unsupervised speech data, interleaved speech-text data, and supervised speech-text data, scaling up to 1 trillion tokens, achieving state-of-the-art performance in both speech language modeling and spoken question answering. We then fine-tune the pre-trained model with high-quality conversational speech data, achieving superior performance compared to existing baselines in both conversational ability and speech quality. The open models can be accessed through https://github.com/THUDM/GLM-4-Voice and https://huggingface.co/THUDM/glm-4-voice-9b." />
 
 
 
-<link rel="alternate" hreflang="en-us" href="https://zxdu.xyz/publication/iclr-24/" />
-<link rel="canonical" href="https://zxdu.xyz/publication/iclr-24/" />
+<link rel="alternate" hreflang="en-us" href="https://zxdu.xyz/publication/glm-4-voice/" />
+<link rel="canonical" href="https://zxdu.xyz/publication/glm-4-voice/" />
 
 
 
@@ -327,18 +327,18 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Zhengxiao Du" />
-<meta property="og:url" content="https://zxdu.xyz/publication/iclr-24/" />
-<meta property="og:title" content="Scaling Speech-Text Pre-training with Synthetic Interleaved Data | Zhengxiao Du" />
-<meta property="og:description" content="peech language models (SpeechLMs) accept speech input and produce speech output, allowing for more natural human-computer interaction compared to text-based large language models (LLMs). Traditional approaches for developing SpeechLMs are constrained by the limited availability of unsupervised speech data and parallel speech-text data, which are significantly less abundant than text pre-training data, thereby limiting their scalability as LLMs. We propose a novel approach to scaling speech-text pre-training by leveraging large-scale synthetic interleaved data derived from text corpora, eliminating the need for parallel speech-text datasets. Our method efficiently constructs speech-text interleaved data by sampling text spans from existing text corpora and synthesizing corresponding speech spans using a text-to-token model, bypassing the need to generate actual speech. We also employ a supervised speech tokenizer derived from an automatic speech recognition (ASR) model by incorporating a vector-quantized bottleneck into the encoder. This supervised training approach results in discrete speech tokens with strong semantic preservation even at lower frame rates (e.g. 12.5Hz), while still maintaining speech reconstruction quality. Starting from a pre-trained language model and scaling our pre-training to 1 trillion tokens (with 600B synthetic interleaved speech-text data), we achieve state-of-the-art performance in speech language modeling and spoken question answering, improving performance on spoken questions tasks from the previous SOTA of 13% (Moshi) to 31%. We further demonstrate that by fine-tuning the pre-trained model with speech dialogue data, we can develop an end-to-end spoken chatbot that achieves competitive performance comparable to existing baselines in both conversational abilities and speech quality, even operating exclusively in the speech domain." /><meta property="og:image" content="https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:url" content="https://zxdu.xyz/publication/glm-4-voice/" />
+<meta property="og:title" content="GLM-4-Voice: Towards Intelligent and Human-Like End-to-End Spoken Chatbot | Zhengxiao Du" />
+<meta property="og:description" content="We introduce GLM-4-Voice, an intelligent and human-like end-to-end spoken chatbot. It supports both Chinese and English, engages in real-time voice conversations, and varies vocal nuances such as emotion, intonation, speech rate, and dialect according to user instructions. GLM-4-Voice uses an ultra-low bitrate (175bps), single-codebook speech tokenizer with 12.5Hz frame rate derived from an automatic speech recognition (ASR) model by incorporating a vector-quantized bottleneck into the encoder. To efficiently transfer knowledge from text to speech modalities, we synthesize speech-text interleaved data from existing text pre-training corpora using a text-to-token model. We continue pre-training from the pre-trained text language model GLM-4-9B with a combination of unsupervised speech data, interleaved speech-text data, and supervised speech-text data, scaling up to 1 trillion tokens, achieving state-of-the-art performance in both speech language modeling and spoken question answering. We then fine-tune the pre-trained model with high-quality conversational speech data, achieving superior performance compared to existing baselines in both conversational ability and speech quality. The open models can be accessed through https://github.com/THUDM/GLM-4-Voice and https://huggingface.co/THUDM/glm-4-voice-9b." /><meta property="og:image" content="https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
       property="article:published_time"
-      content="2024-11-26T00:00:00&#43;00:00"
+      content="2024-12-03T00:00:00&#43;00:00"
     />
   
   
-    <meta property="article:modified_time" content="2024-11-26T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2024-12-03T00:00:00&#43;00:00">
   
 
 
@@ -362,12 +362,12 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://zxdu.xyz/publication/iclr-24/"
+    "@id": "https://zxdu.xyz/publication/glm-4-voice/"
   },
-  "headline": "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+  "headline": "GLM-4-Voice: Towards Intelligent and Human-Like End-to-End Spoken Chatbot",
   
-  "datePublished": "2024-11-26T00:00:00Z",
-  "dateModified": "2024-11-26T00:00:00Z",
+  "datePublished": "2024-12-03T00:00:00Z",
+  "dateModified": "2024-12-03T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -382,7 +382,7 @@
       "url": "https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "peech language models (SpeechLMs) accept speech input and produce speech output, allowing for more natural human-computer interaction compared to text-based large language models (LLMs). Traditional approaches for developing SpeechLMs are constrained by the limited availability of unsupervised speech data and parallel speech-text data, which are significantly less abundant than text pre-training data, thereby limiting their scalability as LLMs. We propose a novel approach to scaling speech-text pre-training by leveraging large-scale synthetic interleaved data derived from text corpora, eliminating the need for parallel speech-text datasets. Our method efficiently constructs speech-text interleaved data by sampling text spans from existing text corpora and synthesizing corresponding speech spans using a text-to-token model, bypassing the need to generate actual speech. We also employ a supervised speech tokenizer derived from an automatic speech recognition (ASR) model by incorporating a vector-quantized bottleneck into the encoder. This supervised training approach results in discrete speech tokens with strong semantic preservation even at lower frame rates (e.g. 12.5Hz), while still maintaining speech reconstruction quality. Starting from a pre-trained language model and scaling our pre-training to 1 trillion tokens (with 600B synthetic interleaved speech-text data), we achieve state-of-the-art performance in speech language modeling and spoken question answering, improving performance on spoken questions tasks from the previous SOTA of 13% (Moshi) to 31%. We further demonstrate that by fine-tuning the pre-trained model with speech dialogue data, we can develop an end-to-end spoken chatbot that achieves competitive performance comparable to existing baselines in both conversational abilities and speech quality, even operating exclusively in the speech domain."
+  "description": "We introduce GLM-4-Voice, an intelligent and human-like end-to-end spoken chatbot. It supports both Chinese and English, engages in real-time voice conversations, and varies vocal nuances such as emotion, intonation, speech rate, and dialect according to user instructions. GLM-4-Voice uses an ultra-low bitrate (175bps), single-codebook speech tokenizer with 12.5Hz frame rate derived from an automatic speech recognition (ASR) model by incorporating a vector-quantized bottleneck into the encoder. To efficiently transfer knowledge from text to speech modalities, we synthesize speech-text interleaved data from existing text pre-training corpora using a text-to-token model. We continue pre-training from the pre-trained text language model GLM-4-9B with a combination of unsupervised speech data, interleaved speech-text data, and supervised speech-text data, scaling up to 1 trillion tokens, achieving state-of-the-art performance in both speech language modeling and spoken question answering. We then fine-tune the pre-trained model with high-quality conversational speech data, achieving superior performance compared to existing baselines in both conversational ability and speech quality. The open models can be accessed through https://github.com/THUDM/GLM-4-Voice and https://huggingface.co/THUDM/glm-4-voice-9b."
 }
 </script>
 
@@ -404,7 +404,7 @@
 
 
   
-  <title>Scaling Speech-Text Pre-training with Synthetic Interleaved Data | Zhengxiao Du</title>
+  <title>GLM-4-Voice: Towards Intelligent and Human-Like End-to-End Spoken Chatbot | Zhengxiao Du</title>
 
   
   
@@ -424,7 +424,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ec8b1512f709f68ad268999484c12a21" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="76b61228631a2c3d87f020f84c3ef5a4" >
 
   
   
@@ -824,7 +824,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Scaling Speech-Text Pre-training with Synthetic Interleaved Data</h1>
+  <h1>GLM-4-Voice: Towards Intelligent and Human-Like End-to-End Spoken Chatbot</h1>
 
   
 
@@ -845,8 +845,9 @@
       <a href="/authors/aohan-zeng/">Aohan Zeng</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
       <a href="/authors/zhengxiao-du/">Zhengxiao Du</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
       <a href="/authors/mingdao-liu/">Mingdao Liu</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
-      <a href="/authors/lei-zhang/">Lei Zhang</a></span>, <span >
+      <a href="/authors/kedong-wang/">Kedong Wang</a></span>, <span >
       <a href="/authors/shengmin-jiang/">Shengmin Jiang</a></span>, <span >
+      <a href="/authors/lei-zhao/">Lei Zhao</a></span>, <span >
       <a href="/authors/yuxiao-dong/">Yuxiao Dong</a></span>, <span >
       <a href="/authors/jie-tang/">Jie Tang</a></span>
   </div>
@@ -859,7 +860,7 @@
     
       
     
-    November, 2024
+    December, 2024
   </span>
   
 
@@ -937,7 +938,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">peech language models (SpeechLMs) accept speech input and produce speech output, allowing for more natural human-computer interaction compared to text-based large language models (LLMs). Traditional approaches for developing SpeechLMs are constrained by the limited availability of unsupervised speech data and parallel speech-text data, which are significantly less abundant than text pre-training data, thereby limiting their scalability as LLMs. We propose a novel approach to scaling speech-text pre-training by leveraging large-scale synthetic interleaved data derived from text corpora, eliminating the need for parallel speech-text datasets. Our method efficiently constructs speech-text interleaved data by sampling text spans from existing text corpora and synthesizing corresponding speech spans using a text-to-token model, bypassing the need to generate actual speech. We also employ a supervised speech tokenizer derived from an automatic speech recognition (ASR) model by incorporating a vector-quantized bottleneck into the encoder. This supervised training approach results in discrete speech tokens with strong semantic preservation even at lower frame rates (e.g. 12.5Hz), while still maintaining speech reconstruction quality. Starting from a pre-trained language model and scaling our pre-training to 1 trillion tokens (with 600B synthetic interleaved speech-text data), we achieve state-of-the-art performance in speech language modeling and spoken question answering, improving performance on spoken questions tasks from the previous SOTA of 13% (Moshi) to 31%. We further demonstrate that by fine-tuning the pre-trained model with speech dialogue data, we can develop an end-to-end spoken chatbot that achieves competitive performance comparable to existing baselines in both conversational abilities and speech quality, even operating exclusively in the speech domain.</p>
+    <p class="pub-abstract">We introduce GLM-4-Voice, an intelligent and human-like end-to-end spoken chatbot. It supports both Chinese and English, engages in real-time voice conversations, and varies vocal nuances such as emotion, intonation, speech rate, and dialect according to user instructions. GLM-4-Voice uses an ultra-low bitrate (175bps), single-codebook speech tokenizer with 12.5Hz frame rate derived from an automatic speech recognition (ASR) model by incorporating a vector-quantized bottleneck into the encoder. To efficiently transfer knowledge from text to speech modalities, we synthesize speech-text interleaved data from existing text pre-training corpora using a text-to-token model. We continue pre-training from the pre-trained text language model GLM-4-9B with a combination of unsupervised speech data, interleaved speech-text data, and supervised speech-text data, scaling up to 1 trillion tokens, achieving state-of-the-art performance in both speech language modeling and spoken question answering. We then fine-tune the pre-trained model with high-quality conversational speech data, achieving superior performance compared to existing baselines in both conversational ability and speech quality. The open models can be accessed through <a href="https://github.com/THUDM/GLM-4-Voice" target="_blank" rel="noopener">https://github.com/THUDM/GLM-4-Voice</a> and <a href="https://huggingface.co/THUDM/glm-4-voice-9b" target="_blank" rel="noopener">https://huggingface.co/THUDM/glm-4-voice-9b</a>.</p>
     
 
     
@@ -965,7 +966,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Under review</div>
+          <div class="col-12 col-md-9">Preprint</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -1000,7 +1001,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Ficlr-24%2F&amp;text=Scaling&#43;Speech-Text&#43;Pre-training&#43;with&#43;Synthetic&#43;Interleaved&#43;Data" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-4-voice%2F&amp;text=GLM-4-Voice%3A&#43;Towards&#43;Intelligent&#43;and&#43;Human-Like&#43;End-to-End&#43;Spoken&#43;Chatbot" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1017,7 +1018,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Ficlr-24%2F&amp;t=Scaling&#43;Speech-Text&#43;Pre-training&#43;with&#43;Synthetic&#43;Interleaved&#43;Data" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-4-voice%2F&amp;t=GLM-4-Voice%3A&#43;Towards&#43;Intelligent&#43;and&#43;Human-Like&#43;End-to-End&#43;Spoken&#43;Chatbot" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -1036,7 +1037,7 @@
         
       
       <li>
-        <a href="mailto:?subject=Scaling%20Speech-Text%20Pre-training%20with%20Synthetic%20Interleaved%20Data&amp;body=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Ficlr-24%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=GLM-4-Voice%3A%20Towards%20Intelligent%20and%20Human-Like%20End-to-End%20Spoken%20Chatbot&amp;body=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-4-voice%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1053,7 +1054,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Ficlr-24%2F&amp;title=Scaling&#43;Speech-Text&#43;Pre-training&#43;with&#43;Synthetic&#43;Interleaved&#43;Data" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-4-voice%2F&amp;title=GLM-4-Voice%3A&#43;Towards&#43;Intelligent&#43;and&#43;Human-Like&#43;End-to-End&#43;Spoken&#43;Chatbot" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1070,7 +1071,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=Scaling&#43;Speech-Text&#43;Pre-training&#43;with&#43;Synthetic&#43;Interleaved&#43;Data%20https%3A%2F%2Fzxdu.xyz%2Fpublication%2Ficlr-24%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="https://web.whatsapp.com/send?text=GLM-4-Voice%3A&#43;Towards&#43;Intelligent&#43;and&#43;Human-Like&#43;End-to-End&#43;Spoken&#43;Chatbot%20https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-4-voice%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1087,7 +1088,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Ficlr-24%2F&amp;title=Scaling&#43;Speech-Text&#43;Pre-training&#43;with&#43;Synthetic&#43;Interleaved&#43;Data" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-4-voice%2F&amp;title=GLM-4-Voice%3A&#43;Towards&#43;Intelligent&#43;and&#43;Human-Like&#43;End-to-End&#43;Spoken&#43;Chatbot" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1106,6 +1107,12 @@
 
 
   
+  
+    
+
+
+
+
   
     
 

@@ -5,12 +5,36 @@
     <link>https://zxdu.xyz/publication-type/1/</link>
       <atom:link href="https://zxdu.xyz/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 15 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 Nov 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
       <link>https://zxdu.xyz/publication-type/1/</link>
     </image>
+    
+    <item>
+      <title>Scaling Speech-Text Pre-training with Synthetic Interleaved Data</title>
+      <link>https://zxdu.xyz/publication/iclr-25/</link>
+      <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://zxdu.xyz/publication/iclr-25/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding Emergent Abilities of Language Models from the Loss Perspective</title>
+      <link>https://zxdu.xyz/publication/neurips-24/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://zxdu.xyz/publication/neurips-24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GLM-130B: An Open Bilingual Pre-Trained Model</title>
+      <link>https://zxdu.xyz/publication/glm-130b/</link>
+      <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://zxdu.xyz/publication/glm-130b/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>GLM: General Language Model Pretraining with Autoregressive Blank Infilling</title>
@@ -41,14 +65,6 @@
       <link>https://zxdu.xyz/publication/kdd-19/</link>
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
       <guid>https://zxdu.xyz/publication/kdd-19/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EFCNN: A Restricted Convolutional Neural Network for Expert Finding</title>
-      <link>https://zxdu.xyz/publication/pakdd-19/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://zxdu.xyz/publication/pakdd-19/</guid>
       <description></description>
     </item>
     

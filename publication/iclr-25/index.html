@@ -280,12 +280,12 @@
 
   
 
-<meta name="description" content="There have been various types of pretraining architectures including autoencoding models (e.g., BERT), autoregressive models (e.g., GPT), and encoder-decoder models (e.g., T5). On the other hand, NLP tasks differ in nature, with three main categories being natural language understanding (NLU), unconditional generation, and conditional generation, while none of the pretraining frameworks performs the best for all tasks. We propose a General Language Model (GLM)  based on autoregressive blank infilling to address this challenge. The proposed architecture has two major benefits: (1) It improves pretrain-finetune consistency via cloze-style finetuning and naturally handles variable-length blank infilling which is crucial for many downstream tasks. Empirically, GLM substantially outperforms BERT on the SuperGLUE natural language understanding benchmark with the same amount of pretraining data and steps. (2) It is flexible enough to handle various NLP tasks with a single pretrained model. GLM with 1.25x parameters of BERT-Large achieves the best performance in NLU, conditional and unconditional generation at the same time, demonstrating its generalizability to different downstream tasks." />
+<meta name="description" content="Speech language models (SpeechLMs) accept speech input and produce speech output, allowing for more natural human-computer interaction compared to text-based large language models (LLMs). Traditional approaches for developing SpeechLMs are constrained by the limited availability of unsupervised speech data and parallel speech-text data, which are significantly less abundant than text pre-training data, thereby limiting their scalability as LLMs. We propose a novel approach to scaling speech-text pre-training by leveraging large-scale synthetic interleaved data derived from text corpora, eliminating the need for parallel speech-text datasets. Our method efficiently constructs speech-text interleaved data by sampling text spans from existing text corpora and synthesizing corresponding speech spans using a text-to-token model, bypassing the need to generate actual speech. We also employ a supervised speech tokenizer derived from an automatic speech recognition (ASR) model by incorporating a vector-quantized bottleneck into the encoder. This supervised training approach results in discrete speech tokens with strong semantic preservation even at lower frame rates (e.g. 12.5Hz), while still maintaining speech reconstruction quality. Starting from a pre-trained language model and scaling our pre-training to 1 trillion tokens (with 600B synthetic interleaved speech-text data), we achieve state-of-the-art performance in speech language modeling and spoken question answering, improving performance on spoken questions tasks from the previous SOTA of 13% (Moshi) to 31%. We further demonstrate that by fine-tuning the pre-trained model with speech dialogue data, we can develop an end-to-end spoken chatbot that achieves competitive performance comparable to existing baselines in both conversational abilities and speech quality, even operating exclusively in the speech domain." />
 
 
 
-<link rel="alternate" hreflang="en-us" href="https://zxdu.xyz/publication/glm-21/" />
-<link rel="canonical" href="https://zxdu.xyz/publication/glm-21/" />
+<link rel="alternate" hreflang="en-us" href="https://zxdu.xyz/publication/iclr-25/" />
+<link rel="canonical" href="https://zxdu.xyz/publication/iclr-25/" />
 
 
 
@@ -327,18 +327,18 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Zhengxiao Du" />
-<meta property="og:url" content="https://zxdu.xyz/publication/glm-21/" />
-<meta property="og:title" content="GLM: General Language Model Pretraining with Autoregressive Blank Infilling | Zhengxiao Du" />
-<meta property="og:description" content="There have been various types of pretraining architectures including autoencoding models (e.g., BERT), autoregressive models (e.g., GPT), and encoder-decoder models (e.g., T5). On the other hand, NLP tasks differ in nature, with three main categories being natural language understanding (NLU), unconditional generation, and conditional generation, while none of the pretraining frameworks performs the best for all tasks. We propose a General Language Model (GLM)  based on autoregressive blank infilling to address this challenge. The proposed architecture has two major benefits: (1) It improves pretrain-finetune consistency via cloze-style finetuning and naturally handles variable-length blank infilling which is crucial for many downstream tasks. Empirically, GLM substantially outperforms BERT on the SuperGLUE natural language understanding benchmark with the same amount of pretraining data and steps. (2) It is flexible enough to handle various NLP tasks with a single pretrained model. GLM with 1.25x parameters of BERT-Large achieves the best performance in NLU, conditional and unconditional generation at the same time, demonstrating its generalizability to different downstream tasks." /><meta property="og:image" content="https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:url" content="https://zxdu.xyz/publication/iclr-25/" />
+<meta property="og:title" content="Scaling Speech-Text Pre-training with Synthetic Interleaved Data | Zhengxiao Du" />
+<meta property="og:description" content="Speech language models (SpeechLMs) accept speech input and produce speech output, allowing for more natural human-computer interaction compared to text-based large language models (LLMs). Traditional approaches for developing SpeechLMs are constrained by the limited availability of unsupervised speech data and parallel speech-text data, which are significantly less abundant than text pre-training data, thereby limiting their scalability as LLMs. We propose a novel approach to scaling speech-text pre-training by leveraging large-scale synthetic interleaved data derived from text corpora, eliminating the need for parallel speech-text datasets. Our method efficiently constructs speech-text interleaved data by sampling text spans from existing text corpora and synthesizing corresponding speech spans using a text-to-token model, bypassing the need to generate actual speech. We also employ a supervised speech tokenizer derived from an automatic speech recognition (ASR) model by incorporating a vector-quantized bottleneck into the encoder. This supervised training approach results in discrete speech tokens with strong semantic preservation even at lower frame rates (e.g. 12.5Hz), while still maintaining speech reconstruction quality. Starting from a pre-trained language model and scaling our pre-training to 1 trillion tokens (with 600B synthetic interleaved speech-text data), we achieve state-of-the-art performance in speech language modeling and spoken question answering, improving performance on spoken questions tasks from the previous SOTA of 13% (Moshi) to 31%. We further demonstrate that by fine-tuning the pre-trained model with speech dialogue data, we can develop an end-to-end spoken chatbot that achieves competitive performance comparable to existing baselines in both conversational abilities and speech quality, even operating exclusively in the speech domain." /><meta property="og:image" content="https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
       property="article:published_time"
-      content="2022-03-15T00:00:00&#43;00:00"
+      content="2024-11-26T00:00:00&#43;00:00"
     />
   
   
-    <meta property="article:modified_time" content="2022-03-15T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2024-11-26T00:00:00&#43;00:00">
   
 
 
@@ -362,16 +362,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://zxdu.xyz/publication/glm-21/"
+    "@id": "https://zxdu.xyz/publication/iclr-25/"
   },
-  "headline": "GLM: General Language Model Pretraining with Autoregressive Blank Infilling",
+  "headline": "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
   
-  "datePublished": "2022-03-15T00:00:00Z",
-  "dateModified": "2022-03-15T00:00:00Z",
+  "datePublished": "2024-11-26T00:00:00Z",
+  "dateModified": "2024-11-26T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Zhengxiao Du"
+    "name": "Aohan Zeng"
   },
   
   "publisher": {
@@ -382,7 +382,7 @@
       "url": "https://zxdu.xyz/media/icon_hu201e1a72013825f24e615b24fa4a82e9_325334_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "There have been various types of pretraining architectures including autoencoding models (e.g., BERT), autoregressive models (e.g., GPT), and encoder-decoder models (e.g., T5). On the other hand, NLP tasks differ in nature, with three main categories being natural language understanding (NLU), unconditional generation, and conditional generation, while none of the pretraining frameworks performs the best for all tasks. We propose a General Language Model (GLM)  based on autoregressive blank infilling to address this challenge. The proposed architecture has two major benefits: (1) It improves pretrain-finetune consistency via cloze-style finetuning and naturally handles variable-length blank infilling which is crucial for many downstream tasks. Empirically, GLM substantially outperforms BERT on the SuperGLUE natural language understanding benchmark with the same amount of pretraining data and steps. (2) It is flexible enough to handle various NLP tasks with a single pretrained model. GLM with 1.25x parameters of BERT-Large achieves the best performance in NLU, conditional and unconditional generation at the same time, demonstrating its generalizability to different downstream tasks."
+  "description": "Speech language models (SpeechLMs) accept speech input and produce speech output, allowing for more natural human-computer interaction compared to text-based large language models (LLMs). Traditional approaches for developing SpeechLMs are constrained by the limited availability of unsupervised speech data and parallel speech-text data, which are significantly less abundant than text pre-training data, thereby limiting their scalability as LLMs. We propose a novel approach to scaling speech-text pre-training by leveraging large-scale synthetic interleaved data derived from text corpora, eliminating the need for parallel speech-text datasets. Our method efficiently constructs speech-text interleaved data by sampling text spans from existing text corpora and synthesizing corresponding speech spans using a text-to-token model, bypassing the need to generate actual speech. We also employ a supervised speech tokenizer derived from an automatic speech recognition (ASR) model by incorporating a vector-quantized bottleneck into the encoder. This supervised training approach results in discrete speech tokens with strong semantic preservation even at lower frame rates (e.g. 12.5Hz), while still maintaining speech reconstruction quality. Starting from a pre-trained language model and scaling our pre-training to 1 trillion tokens (with 600B synthetic interleaved speech-text data), we achieve state-of-the-art performance in speech language modeling and spoken question answering, improving performance on spoken questions tasks from the previous SOTA of 13% (Moshi) to 31%. We further demonstrate that by fine-tuning the pre-trained model with speech dialogue data, we can develop an end-to-end spoken chatbot that achieves competitive performance comparable to existing baselines in both conversational abilities and speech quality, even operating exclusively in the speech domain."
 }
 </script>
 
@@ -404,7 +404,7 @@
 
 
   
-  <title>GLM: General Language Model Pretraining with Autoregressive Blank Infilling | Zhengxiao Du</title>
+  <title>Scaling Speech-Text Pre-training with Synthetic Interleaved Data | Zhengxiao Du</title>
 
   
   
@@ -424,7 +424,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="c5af62dffbcd378227f2f3810518155b" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="c35ca613f45ebfe937815765519c3c4c" >
 
   
   
@@ -824,7 +824,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>GLM: General Language Model Pretraining with Autoregressive Blank Infilling</h1>
+  <h1>Scaling Speech-Text Pre-training with Synthetic Interleaved Data</h1>
 
   
 
@@ -841,13 +841,13 @@
   <div>
     
 
-  <span class="author-highlighted">
-      <a href="/authors/admin/">Zhengxiao Du</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
-      <a href="/authors/yujie-qian/">Yujie Qian</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
-      <a href="/authors/xiao-liu/">Xiao Liu</a></span>, <span >
-      <a href="/authors/ming-ding/">Ming Ding</a></span>, <span >
-      <a href="/authors/jiezhong-qiu/">Jiezhong Qiu</a></span>, <span >
-      <a href="/authors/zhilin-yang/">Zhilin Yang</a></span>, <span >
+  <span >
+      <a href="/authors/aohan-zeng/">Aohan Zeng</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/authors/zhengxiao-du/">Zhengxiao Du</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/authors/mingdao-liu/">Mingdao Liu</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="/authors/lei-zhang/">Lei Zhang</a></span>, <span >
+      <a href="/authors/shengmin-jiang/">Shengmin Jiang</a></span>, <span >
+      <a href="/authors/yuxiao-dong/">Yuxiao Dong</a></span>, <span >
       <a href="/authors/jie-tang/">Jie Tang</a></span>
   </div>
   
@@ -859,7 +859,7 @@
     
       
     
-    March, 2022
+    November, 2024
   </span>
   
 
@@ -915,40 +915,14 @@
   
   
   
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="https://github.com/THUDM/GLM" target="_blank" rel="noopener">
-    <i class="fab fa-github mr-1"></i>Code</a>
-
-  
-  
-  
   
   
   
   
     
   
-  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2103.10360" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2411.17607" target="_blank" rel="noopener">
     <i class="ai ai-arxiv mr-1"></i>Preprint</a>
-
-  
-  
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="https://aclanthology.org/2022.acl-long.26" target="_blank" rel="noopener">
-    <i class="ai ai-acm mr-1"></i>Paper</a>
 
 
 </div>
@@ -963,7 +937,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">There have been various types of pretraining architectures including autoencoding models (e.g., BERT), autoregressive models (e.g., GPT), and encoder-decoder models (e.g., T5). On the other hand, NLP tasks differ in nature, with three main categories being natural language understanding (NLU), unconditional generation, and conditional generation, while none of the pretraining frameworks performs the best for all tasks. We propose a General Language Model (GLM)  based on autoregressive blank infilling to address this challenge. The proposed architecture has two major benefits: (1) It improves pretrain-finetune consistency via cloze-style finetuning and naturally handles variable-length blank infilling which is crucial for many downstream tasks. Empirically, GLM substantially outperforms BERT on the SuperGLUE natural language understanding benchmark with the same amount of pretraining data and steps. (2) It is flexible enough to handle various NLP tasks with a single pretrained model. GLM with 1.25x parameters of BERT-Large achieves the best performance in NLU, conditional and unconditional generation at the same time, demonstrating its generalizability to different downstream tasks.</p>
+    <p class="pub-abstract">Speech language models (SpeechLMs) accept speech input and produce speech output, allowing for more natural human-computer interaction compared to text-based large language models (LLMs). Traditional approaches for developing SpeechLMs are constrained by the limited availability of unsupervised speech data and parallel speech-text data, which are significantly less abundant than text pre-training data, thereby limiting their scalability as LLMs. We propose a novel approach to scaling speech-text pre-training by leveraging large-scale synthetic interleaved data derived from text corpora, eliminating the need for parallel speech-text datasets. Our method efficiently constructs speech-text interleaved data by sampling text spans from existing text corpora and synthesizing corresponding speech spans using a text-to-token model, bypassing the need to generate actual speech. We also employ a supervised speech tokenizer derived from an automatic speech recognition (ASR) model by incorporating a vector-quantized bottleneck into the encoder. This supervised training approach results in discrete speech tokens with strong semantic preservation even at lower frame rates (e.g. 12.5Hz), while still maintaining speech reconstruction quality. Starting from a pre-trained language model and scaling our pre-training to 1 trillion tokens (with 600B synthetic interleaved speech-text data), we achieve state-of-the-art performance in speech language modeling and spoken question answering, improving performance on spoken questions tasks from the previous SOTA of 13% (Moshi) to 31%. We further demonstrate that by fine-tuning the pre-trained model with speech dialogue data, we can develop an end-to-end spoken chatbot that achieves competitive performance comparable to existing baselines in both conversational abilities and speech quality, even operating exclusively in the speech domain.</p>
     
 
     
@@ -991,7 +965,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">the 60th Annual Meeting of the Association for Computational Linguistics, <strong>ACL 2022</strong></div>
+          <div class="col-12 col-md-9">ICLR 2025</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -1026,7 +1000,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-21%2F&amp;text=GLM%3A&#43;General&#43;Language&#43;Model&#43;Pretraining&#43;with&#43;Autoregressive&#43;Blank&#43;Infilling" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Ficlr-25%2F&amp;text=Scaling&#43;Speech-Text&#43;Pre-training&#43;with&#43;Synthetic&#43;Interleaved&#43;Data" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1043,7 +1017,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-21%2F&amp;t=GLM%3A&#43;General&#43;Language&#43;Model&#43;Pretraining&#43;with&#43;Autoregressive&#43;Blank&#43;Infilling" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Ficlr-25%2F&amp;t=Scaling&#43;Speech-Text&#43;Pre-training&#43;with&#43;Synthetic&#43;Interleaved&#43;Data" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -1062,7 +1036,7 @@
         
       
       <li>
-        <a href="mailto:?subject=GLM%3A%20General%20Language%20Model%20Pretraining%20with%20Autoregressive%20Blank%20Infilling&amp;body=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-21%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Scaling%20Speech-Text%20Pre-training%20with%20Synthetic%20Interleaved%20Data&amp;body=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Ficlr-25%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1079,7 +1053,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-21%2F&amp;title=GLM%3A&#43;General&#43;Language&#43;Model&#43;Pretraining&#43;with&#43;Autoregressive&#43;Blank&#43;Infilling" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Ficlr-25%2F&amp;title=Scaling&#43;Speech-Text&#43;Pre-training&#43;with&#43;Synthetic&#43;Interleaved&#43;Data" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1096,7 +1070,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=GLM%3A&#43;General&#43;Language&#43;Model&#43;Pretraining&#43;with&#43;Autoregressive&#43;Blank&#43;Infilling%20https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-21%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="https://web.whatsapp.com/send?text=Scaling&#43;Speech-Text&#43;Pre-training&#43;with&#43;Synthetic&#43;Interleaved&#43;Data%20https%3A%2F%2Fzxdu.xyz%2Fpublication%2Ficlr-25%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1113,7 +1087,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Fglm-21%2F&amp;title=GLM%3A&#43;General&#43;Language&#43;Model&#43;Pretraining&#43;with&#43;Autoregressive&#43;Blank&#43;Infilling" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fzxdu.xyz%2Fpublication%2Ficlr-25%2F&amp;title=Scaling&#43;Speech-Text&#43;Pre-training&#43;with&#43;Synthetic&#43;Interleaved&#43;Data" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1136,77 +1110,6 @@
     
 
 
-
-  
-  
-  
-    
-  
-  
-  
-  <div class="media author-card content-widget-hr">
-    
-      
-      <a href="https://zxdu.xyz/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu7e2cbb0813f9c409aba9226cd1386a71_4073407_270x270_fill_lanczos_center_3.png" alt="Zhengxiao Du"></a>
-    
-
-    <div class="media-body">
-      <h5 class="card-title"><a href="https://zxdu.xyz/">Zhengxiao Du</a></h5>
-      <h6 class="card-subtitle">PhD Student</h6>
-      <p class="card-text">My research interests include machine learning and data mining.</p>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://scholar.google.co.uk/citations?user=A8x07E0AAAAJ" target="_blank" rel="noopener">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://github.com/duzx16" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/files/CV.pdf" >
-        <i class="ai ai-cv"></i>
-      </a>
-    </li>
-  
-</ul>
-
-    </div>
-  </div>
 
 
   
